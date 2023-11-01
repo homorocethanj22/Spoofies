@@ -1,0 +1,12 @@
+[gd_scene format=2]
+
+[node name="Control" type="HBoxContainer"]
+anchor_right = 1.0
+margin_bottom = 14.0
+
+[node name="Label" type="Label" parent="."]
+margin_right = 1024.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "The Message"

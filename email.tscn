@@ -1,0 +1,79 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://message.tscn" type="PackedScene" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Content" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="Content"]
+margin_right = 1024.0
+margin_bottom = 14.0
+text = "Emails"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Content"]
+margin_top = 18.0
+margin_right = 1024.0
+margin_bottom = 18.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Content"]
+margin_top = 22.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Content/ScrollContainer"]
+margin_right = 83.0
+margin_bottom = 140.0
+
+[node name="Control" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+margin_right = 83.0
+
+[node name="Control2" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+margin_top = 18.0
+margin_right = 83.0
+margin_bottom = 32.0
+
+[node name="Control3" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+margin_top = 36.0
+margin_right = 83.0
+margin_bottom = 50.0
+
+[node name="Control4" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+margin_top = 54.0
+margin_right = 83.0
+margin_bottom = 68.0
+
+[node name="Control5" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+margin_top = 72.0
+margin_right = 83.0
+margin_bottom = 86.0
+
+[node name="Control6" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+margin_top = 90.0
+margin_right = 83.0
+margin_bottom = 104.0
+
+[node name="Control7" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+margin_top = 108.0
+margin_right = 83.0
+margin_bottom = 122.0
+
+[node name="Control8" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+margin_top = 126.0
+margin_right = 83.0
+margin_bottom = 140.0
