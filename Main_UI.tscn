@@ -17,11 +17,12 @@ margin_bottom = 14.0
 text = "Main Screen"
 align = 1
 
-[node name="Button" type="Button" parent="Content"]
-margin_top = 18.0
-margin_right = 1024.0
-margin_bottom = 38.0
+[node name="Button" type="Button" parent="."]
+margin_left = 284.0
+margin_top = 505.0
+margin_right = 381.0
+margin_bottom = 596.0
 text = "Email"
 
-[connection signal="pressed" from="Content/Button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="Content/Button" to="Content/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
