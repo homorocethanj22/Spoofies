@@ -17,8 +17,8 @@ var email = ["Best Buy",
 
 
 func _ready():
-	detect.connect("toggled", self, "_on_Detect_toggled")
-	email_elements.connect("item_selected", self, "_on_email_elements_item_selected")
+	#detect.connect("toggled", self, "_on_Detect_toggled")
+	#email_elements.connect("item_selected", self, "_on_email_elements_item_selected")
 	set_bad_lines()
 
 func set_bad_lines():
