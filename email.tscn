@@ -16,23 +16,12 @@ anchor_bottom = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="Label" type="Label" parent="Content"]
-self_modulate = Color( 0, 0, 0, 1 )
-margin_right = 1026.0
-margin_bottom = 48.0
-text = "
-Emails
-___________________________________________________________________________________________________________________________________________________________________________"
-align = 1
-
 [node name="HBoxContainer" type="HBoxContainer" parent="Content"]
-margin_top = 52.0
-margin_right = 1026.0
-margin_bottom = 52.0
+margin_right = 1024.0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Content"]
-margin_top = 56.0
-margin_right = 1026.0
+margin_top = 4.0
+margin_right = 1024.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -88,13 +77,6 @@ margin_top = 168.0
 margin_right = 122.0
 margin_bottom = 188.0
 
-[node name="Button" type="Button" parent="."]
-margin_left = 998.0
-margin_top = 2.0
-margin_right = 1022.0
-margin_bottom = 23.0
-text = "X"
-
 [node name="Panel" type="ColorRect" parent="."]
 anchor_top = 1.0
 anchor_right = 1.0
@@ -109,5 +91,4 @@ margin_right = 381.0
 margin_bottom = 99.0
 text = "Email"
 
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Panel/EmailApp" to="Panel/EmailApp" method="_on_Button_pressed"]

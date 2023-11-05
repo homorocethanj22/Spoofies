@@ -35,6 +35,7 @@ func _on_Detect_toggled(button_pressed):
 		email_elements.unselect_all()
 	#update email content
 	update_email_content_interactivity()
+	get_tree().change_scene("res://detect_mode.tscn")
 
 func update_email_content_interactivity():
 	# Update the email content to be interactive based on detection mode
@@ -51,3 +52,8 @@ func _on_email_elements_item_selected(index):
 			print("Suspicious element detected!")
 		else:
 			print("This element is not considered suspicious.")
+
+
+func _on_Detect_pressed():
+	detection_mode = !detection_mode
+	get_tree().change_scene("res://detect_mode.tscn")

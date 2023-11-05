@@ -1,8 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://email_message.gd" type="Script" id=1]
-
-[sub_resource type="Theme" id=1]
+[ext_resource path="res://detect_mode.gd" type="Script" id=1]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -37,13 +35,6 @@ MacBook Pro 2023 2TB: $3,528.89
 If you wish cancel your order or update shipping information go to this link:
 1280X3ioPsh812ASW.com  "
 
-[node name="Exit" type="Button" parent="."]
-margin_left = 999.0
-margin_top = 1.0
-margin_right = 1023.0
-margin_bottom = 24.0
-text = "X"
-
 [node name="Panel2" type="ColorRect" parent="."]
 anchor_top = 1.0
 anchor_right = 1.0
@@ -51,13 +42,15 @@ anchor_bottom = 1.0
 margin_top = -103.0
 color = Color( 0.584314, 0.584314, 0.584314, 1 )
 
-[node name="Detect" type="Button" parent="Panel2"]
-margin_left = 535.0
-margin_top = 14.0
-margin_right = 716.0
-margin_bottom = 99.0
-theme = SubResource( 1 )
-text = "Detect"
+[node name="Label" type="Label" parent="Panel2"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -102.0
+text = "Detection Mode Enabled"
+align = 1
+valign = 1
 
 [node name="Label" type="Label" parent="."]
 self_modulate = Color( 0, 0, 0, 1 )
@@ -67,6 +60,18 @@ text = "
 Email
 ___________________________________________________________________________________________________________________________________________________________________________"
 
-[connection signal="pressed" from="Exit" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="Panel2/Detect" to="." method="_on_Detect_pressed"]
-[connection signal="toggled" from="Panel2/Detect" to="." method="_on_Detect_toggled"]
+[node name="bad1" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 39.0
+margin_top = 54.0
+margin_right = 262.0
+margin_bottom = 86.0
+
+[node name="bad2" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 266.0
+margin_right = 177.0
+margin_bottom = 287.0
+
+[connection signal="pressed" from="bad1" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="bad2" to="." method="_on_bad2_pressed"]
