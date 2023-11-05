@@ -17,8 +17,30 @@ func _ready():
 
 
 func _on_Button2_pressed():
+	$Found.popup()
 	print("Suspicious signifier 1 found!")
 
 
 func _on_bad2_pressed():
+	$Found.popup()
 	print("Suspicious signifier 2 found!")
+
+
+func _on_Wrong1_pressed():
+	$NotFound.popup()
+
+
+func _on_Wrong2_pressed():
+	$NotFound.popup()
+
+
+func _on_Wrong3_pressed():
+	$NotFound.popup()
+
+
+func _on_Wrong4_pressed():
+	$NotFound.popup()
+
+
+func _on_Wrong5_pressed():
+	$NotFound.popup()

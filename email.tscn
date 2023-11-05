@@ -28,67 +28,106 @@ size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Content/ScrollContainer"]
 margin_right = 122.0
-margin_bottom = 188.0
+margin_bottom = 44.0
 
 [node name="Control" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
 anchor_bottom = 0.0
 margin_right = 122.0
 margin_bottom = 20.0
 
-[node name="Control2" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
-anchor_bottom = 0.0
+[node name="TestX" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 24.0
 margin_right = 122.0
 margin_bottom = 44.0
+text = "Best Buy"
 
-[node name="Control3" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
-anchor_bottom = 0.0
-margin_top = 48.0
-margin_right = 122.0
-margin_bottom = 68.0
+[node name="PopupPanel" type="PopupPanel" parent="."]
+visible = true
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -843.0
+margin_top = -276.0
+margin_bottom = 276.0
 
-[node name="Control4" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
-anchor_bottom = 0.0
-margin_top = 72.0
-margin_right = 122.0
-margin_bottom = 92.0
-
-[node name="Control5" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
-anchor_bottom = 0.0
-margin_top = 96.0
-margin_right = 122.0
-margin_bottom = 116.0
-
-[node name="Control6" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
-anchor_bottom = 0.0
-margin_top = 120.0
-margin_right = 122.0
-margin_bottom = 140.0
-
-[node name="Control7" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
-anchor_bottom = 0.0
-margin_top = 144.0
-margin_right = 122.0
-margin_bottom = 164.0
-
-[node name="Control8" parent="Content/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
-anchor_bottom = 0.0
-margin_top = 168.0
-margin_right = 122.0
-margin_bottom = 188.0
-
-[node name="Panel" type="ColorRect" parent="."]
-anchor_top = 1.0
+[node name="ColorRect" type="ColorRect" parent="PopupPanel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -103.0
-color = Color( 0.584314, 0.584314, 0.584314, 1 )
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
 
-[node name="EmailApp" type="Button" parent="Panel"]
-margin_left = 284.0
-margin_top = 8.0
-margin_right = 381.0
-margin_bottom = 99.0
-text = "Email"
+[node name="Panel" type="ColorRect" parent="PopupPanel/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 
-[connection signal="pressed" from="Panel/EmailApp" to="Panel/EmailApp" method="_on_Button_pressed"]
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel/ColorRect/Panel"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 1024.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "
+Best Buy
+
+From: shipping-services@bestbvy.com
+
+Subject: your package is on the way!
+_________________________________________________________________________________________________________________________________________________________________________
+
+
+Dear Valued Customer,
+
+We are writing to inform you that your order has been shipped!
+
+Order No. 9000X9237BY746328
+MacBook Pro 2023 2TB: $3,528.89
+
+If you wish cancel your order or update shipping information go to this link:
+[color=red]1280X3ioPsh812ASW.com[/color]"
+text = "
+Best Buy
+
+From: shipping-services@bestbvy.com
+
+Subject: your package is on the way!
+_________________________________________________________________________________________________________________________________________________________________________
+
+
+Dear Valued Customer,
+
+We are writing to inform you that your order has been shipped!
+
+Order No. 9000X9237BY746328
+MacBook Pro 2023 2TB: $3,528.89
+
+If you wish cancel your order or update shipping information go to this link:
+1280X3ioPsh812ASW.com"
+
+[node name="DetectButton" type="Button" parent="PopupPanel/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.5
+margin_top = -20.0
+margin_right = 29.5
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/TestX" to="." method="_on_TestX_pressed"]
+[connection signal="pressed" from="PopupPanel/ColorRect/Panel/DetectButton" to="." method="_on_DetectButton_pressed"]
+[connection signal="pressed" from="PopupPanel/ColorRect/Exit" to="." method="_on_Exit_pressed"]

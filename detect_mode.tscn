@@ -57,7 +57,7 @@ self_modulate = Color( 0, 0, 0, 1 )
 margin_right = 1026.0
 margin_bottom = 48.0
 text = "
-Email
+Best Buy
 ___________________________________________________________________________________________________________________________________________________________________________"
 
 [node name="bad1" type="Button" parent="."]
@@ -65,7 +65,7 @@ modulate = Color( 1, 1, 1, 0 )
 margin_left = 39.0
 margin_top = 54.0
 margin_right = 262.0
-margin_bottom = 86.0
+margin_bottom = 76.0
 
 [node name="bad2" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
@@ -73,5 +73,68 @@ margin_top = 266.0
 margin_right = 177.0
 margin_bottom = 287.0
 
+[node name="Found" type="AcceptDialog" parent="."]
+modulate = Color( 0, 1, 0.415686, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -130.5
+margin_top = -69.5
+margin_right = 130.5
+margin_bottom = 69.5
+dialog_text = "Scam clue found!"
+
+[node name="NotFound" type="AcceptDialog" parent="."]
+modulate = Color( 1, 0.368627, 0.368627, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -129.0
+margin_top = -69.0
+margin_right = 133.0
+margin_bottom = 69.0
+dialog_text = "Not a scam clue..."
+
+[node name="Wrong1" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1.0
+margin_top = 87.0
+margin_right = 234.0
+margin_bottom = 108.0
+
+[node name="Wrong2" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 147.0
+margin_right = 150.0
+margin_bottom = 168.0
+
+[node name="Wrong3" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1.0
+margin_top = 176.0
+margin_right = 402.0
+margin_bottom = 197.0
+
+[node name="Wrong4" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -1.0
+margin_top = 207.0
+margin_right = 232.0
+margin_bottom = 239.0
+
+[node name="Wrong5" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -1.0
+margin_top = 252.0
+margin_right = 484.0
+margin_bottom = 272.0
+
 [connection signal="pressed" from="bad1" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="bad2" to="." method="_on_bad2_pressed"]
+[connection signal="pressed" from="Wrong1" to="." method="_on_Wrong1_pressed"]
+[connection signal="pressed" from="Wrong2" to="." method="_on_Wrong2_pressed"]
+[connection signal="pressed" from="Wrong3" to="." method="_on_Wrong3_pressed"]
+[connection signal="pressed" from="Wrong4" to="." method="_on_Wrong4_pressed"]
+[connection signal="pressed" from="Wrong5" to="." method="_on_Wrong5_pressed"]
