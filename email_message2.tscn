@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://email_message.gd" type="Script" id=1]
+
+[sub_resource type="Theme" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Panel" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="Panel"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_right = 1024.0
+margin_bottom = 497.0
+text = "
+
+
+
+From: shipping-services@bestbvy.com
+
+Subject: your package is on the way!
+__________________________________________________________________________________________________________________________________________________________________________
+
+
+Dear Valued Customer,
+
+We are writing to inform you that your order has been shipped!
+
+Order No. 9000X9237BY746328
+MacBook Pro 2023 2TB: $3,528.89
+
+If you wish cancel your order or update shipping information go to this link:
+1280X3ioPsh812ASW.com  "
+
+[node name="Exit" type="Button" parent="."]
+margin_left = 999.0
+margin_top = 1.0
+margin_right = 1023.0
+margin_bottom = 24.0
+text = "X"
+
+[node name="Panel2" type="ColorRect" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -103.0
+color = Color( 0.584314, 0.584314, 0.584314, 1 )
+
+[node name="Detect" type="Button" parent="Panel2"]
+margin_left = 535.0
+margin_top = 14.0
+margin_right = 716.0
+margin_bottom = 99.0
+theme = SubResource( 1 )
+text = "Detect"
+
+[node name="Label" type="Label" parent="."]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_right = 1026.0
+margin_bottom = 48.0
+text = "
+Email
+___________________________________________________________________________________________________________________________________________________________________________"
+
+[connection signal="pressed" from="Exit" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel2/Detect" to="." method="_on_Detect_pressed"]
+[connection signal="toggled" from="Panel2/Detect" to="." method="_on_Detect_toggled"]
