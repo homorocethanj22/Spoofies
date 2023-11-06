@@ -34,17 +34,17 @@ margin_right = 132.0
 margin_bottom = 20.0
 text = "Best Buy"
 
-[node name="email2" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+[node name="TestY" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 24.0
 margin_right = 132.0
 margin_bottom = 44.0
-text = "ABC Inc."
+text = "USPS Delivery"
 
-[node name="email3" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+[node name="TestZ" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 48.0
 margin_right = 132.0
 margin_bottom = 68.0
-text = "NetBank"
+text = "Nerd Squad"
 
 [node name="email4" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 72.0
@@ -83,7 +83,6 @@ margin_bottom = 212.0
 text = "VTPolice"
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -170,6 +169,194 @@ margin_right = 4.0
 margin_bottom = 16.0
 text = "X"
 
+[node name="PopupPanel2" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel2/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel2/ColorRect/Panel"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "
+USPS Delivery
+
+From: [color=blue][u]usps@account-maintenence.com[/u][/color] 
+
+Subject: Delivery Notification
+__________________________________________________________________________________________________________________________________________
+
+Your parcel has arrived on October 19, 2024
+
+Courier was unable to deliver the parcel to you.
+
+Click [color=blue][u]here[/u][/color] to confirm the delivery address and check shipping process.
+
+Copyright USPS, All Rights Reserved."
+text = "
+USPS Delivery
+
+From: usps@account-maintenence.com 
+
+Subject: Delivery Notification
+__________________________________________________________________________________________________________________________________________
+
+Your parcel has arrived on October 19, 2024
+
+Courier was unable to deliver the parcel to you.
+
+Click here to confirm the delivery address and check shipping process.
+
+Copyright USPS, All Rights Reserved."
+
+[node name="DetectButton" type="Button" parent="PopupPanel2/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.5
+margin_top = -20.0
+margin_right = 29.5
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel2/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel3" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel3/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel3/ColorRect/Panel"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "
+From: [color=blue][u]invoicing@techsupport-corp.com[/u][/color]
+
+Subject: Nerd Squad Notice - Payment Processed
+_______________________________________________________________________________________________________________________________________________________________
+
+Dear Customer,
+
+Thank you for your continued business!
+
+Your Nerd Squad subscription plan for Anti-Virus Software has been successfully renewed and updated today!
+
+The below amount has been debited from your card and will reflect in your statement within 24 hours.
+
+Product: Nerd Squad @ Anti-Virus Software - 3 year subscription
+InvoiceNo: #SEF-64798
+Total Amount: $342.92 USD
+Payment Method: Stored Credit Card
+
+Note: 
+For account questions or to cancel your subscription or to request a refund,
+click [color=blue][u]here[/u][/color]
+
+Sincerely,
+Nerd Squad, All Rights Reserved.
+"
+text = "
+From: invoicing@techsupport-corp.com
+
+Subject: Nerd Squad Notice - Payment Processed
+_______________________________________________________________________________________________________________________________________________________________
+
+Dear Customer,
+
+Thank you for your continued business!
+
+Your Nerd Squad subscription plan for Anti-Virus Software has been successfully renewed and updated today!
+
+The below amount has been debited from your card and will reflect in your statement within 24 hours.
+
+Product: Nerd Squad @ Anti-Virus Software - 3 year subscription
+InvoiceNo: #SEF-64798
+Total Amount: $342.92 USD
+Payment Method: Stored Credit Card
+
+Note: 
+For account questions or to cancel your subscription or to request a refund,
+click here
+
+Sincerely,
+Nerd Squad, All Rights Reserved.
+"
+
+[node name="DetectButton" type="Button" parent="PopupPanel3/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.5
+margin_top = -20.0
+margin_right = 29.5
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel3/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/TestX" to="." method="_on_TestX_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/TestY" to="." method="_on_TestY_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/TestZ" to="." method="_on_TestZ_pressed"]
 [connection signal="pressed" from="PopupPanel/ColorRect/Panel/DetectButton" to="." method="_on_DetectButton_pressed"]
 [connection signal="pressed" from="PopupPanel/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel2/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel3/ColorRect/Exit" to="." method="_on_Exit_pressed"]

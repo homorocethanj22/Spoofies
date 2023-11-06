@@ -14,3 +14,12 @@ func _on_DetectButton_pressed():
 
 func _on_Exit_pressed():
 	$PopupPanel.hide()
+	$PopupPanel2.hide()
+	$PopupPanel3.hide()
+
+func _on_TestY_pressed():
+	$PopupPanel2.popup()
+
+
+func _on_TestZ_pressed():
+	$PopupPanel3.popup()
