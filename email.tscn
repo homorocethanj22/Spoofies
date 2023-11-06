@@ -38,13 +38,13 @@ text = "Best Buy"
 margin_top = 24.0
 margin_right = 132.0
 margin_bottom = 44.0
-text = "ABC Inc."
+text = "NetBank"
 
 [node name="email3" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 48.0
 margin_right = 132.0
 margin_bottom = 68.0
-text = "NetBank"
+text = "ABC Inc."
 
 [node name="email4" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 72.0
@@ -106,19 +106,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="email_elements" type="RichTextLabel" parent="PopupPanel/ColorRect/Panel"]
-self_modulate = Color( 0, 0, 0, 1 )
 margin_left = 5.0
 margin_top = 5.0
 margin_right = 836.0
 margin_bottom = 497.0
 bbcode_enabled = true
-bbcode_text = "
+bbcode_text = "[color=black]
 Best Buy
+__________________________________________________________________________________________________________________________________________
 
-From: shipping-services@bestbvy.com
+From: [color=blue]shipping-services@bestbvy.com[/color]
 
 Subject: your package is on the way!
-_________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________
 
 
 Dear Valued Customer,
@@ -128,15 +128,16 @@ We are writing to inform you that your order has been shipped!
 Order No. 9000X9237BY746328
 MacBook Pro 2023 2TB: $3,528.89
 
-If you wish cancel your order or update shipping information go to this link:
-[color=red]1280X3ioPsh812ASW.com[/color]"
+If you wish cancel your order or update shipping information go to this link:[/color]
+[color=blue]1280X3ioPsh812ASW.com[/color]"
 text = "
 Best Buy
+__________________________________________________________________________________________________________________________________________
 
 From: shipping-services@bestbvy.com
 
 Subject: your package is on the way!
-_________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________
 
 
 Dear Valued Customer,
@@ -170,6 +171,94 @@ margin_right = 4.0
 margin_bottom = 16.0
 text = "X"
 
+[node name="PopupPanel2" type="PopupPanel" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel2/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel2/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+NetBank
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue]netbank-official@gmail.com[/color]
+
+Subject: save your online data!
+__________________________________________________________________________________________________________________________________________
+
+
+NetBank Customer,
+
+We have recently update our internet banking system. You will need to log in and confirm your online data. If you wish to continue receiving online service, click this [color=blue]link[/color] and log in using the same information you used to log in the last time you accessed your online data.
+
+Thank you,
+User Name[/color]
+"
+text = "
+NetBank
+__________________________________________________________________________________________________________________________________________
+
+From: netbank-official@gmail.com
+
+Subject: save your online data!
+__________________________________________________________________________________________________________________________________________
+
+
+NetBank Customer,
+
+We have recently update our internet banking system. You will need to log in and confirm your online data. If you wish to continue receiving online service, click this link and log in using the same information you used to log in the last time you accessed your online data.
+
+Thank you,
+User Name
+"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel2/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.5
+margin_top = -20.0
+margin_right = 29.5
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel2/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/TestX" to="." method="_on_TestX_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email2" to="." method="_on_email2_pressed"]
 [connection signal="pressed" from="PopupPanel/ColorRect/Panel/DetectButton" to="." method="_on_DetectButton_pressed"]
 [connection signal="pressed" from="PopupPanel/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel2/ColorRect/Panel/DetectButton2" to="." method="_on_DetectButton2_pressed"]
+[connection signal="pressed" from="PopupPanel2/ColorRect/Exit" to="." method="_on_Exit_pressed"]

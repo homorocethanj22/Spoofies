@@ -17,6 +17,25 @@ anchor_bottom = 1.0
 self_modulate = Color( 0, 0, 0, 1 )
 margin_right = 1024.0
 margin_bottom = 497.0
+bbcode_text = "
+
+
+
+From: shipping-services@bestbvy.com
+
+Subject: your package is on the way!
+__________________________________________________________________________________________________________________________________________________________________________
+
+
+Dear Valued Customer,
+
+We are writing to inform you that your order has been shipped!
+
+Order No. 9000X9237BY746328
+MacBook Pro 2023 2TB: $3,528.89
+
+If you wish cancel your order or update shipping information go to this link:
+[color=$091bfb]1280X3ioPsh812ASW.com [/color] "
 text = "
 
 
@@ -35,7 +54,7 @@ Order No. 9000X9237BY746328
 MacBook Pro 2023 2TB: $3,528.89
 
 If you wish cancel your order or update shipping information go to this link:
-1280X3ioPsh812ASW.com  "
+[color=$091bfb]1280X3ioPsh812ASW.com [/color] "
 
 [node name="Exit" type="Button" parent="."]
 margin_left = 999.0
