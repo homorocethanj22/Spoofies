@@ -70,17 +70,17 @@ margin_right = 36.0
 margin_bottom = 51.0
 icon = ExtResource( 3 )
 
-[node name="Button" type="Button" parent="Panel/Panel/HBoxContainer"]
+[node name="SocialButton" type="Button" parent="Panel/Panel/HBoxContainer"]
 margin_left = 40.0
 margin_right = 76.0
 margin_bottom = 51.0
-icon = ExtResource( 4 )
+icon = ExtResource( 5 )
 
-[node name="Button2" type="Button" parent="Panel/Panel/HBoxContainer"]
+[node name="DMButton" type="Button" parent="Panel/Panel/HBoxContainer"]
 margin_left = 80.0
 margin_right = 116.0
 margin_bottom = 51.0
-icon = ExtResource( 5 )
+icon = ExtResource( 4 )
 
 [node name="WindowDialog" type="WindowDialog" parent="."]
 anchor_left = 0.5
@@ -98,6 +98,21 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="ComingSoonDialog" type="AcceptDialog" parent="."]
+visible = true
+margin_left = 346.0
+margin_top = 261.0
+margin_right = 646.0
+margin_bottom = 361.0
+window_title = "Feature coming soon!"
+dialog_text = "This feature is in development..."
+dialog_autowrap = true
+__meta__ = {
+"_editor_description_": ""
+}
+
 [connection signal="pressed" from="Panel/Panel/EmailApp" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Panel/Panel/EmailApp" to="Panel/Panel/EmailApp" method="_on_Button_pressed"]
 [connection signal="pressed" from="Panel/Panel/HBoxContainer/Testy" to="." method="_on_Testy_pressed"]
+[connection signal="pressed" from="Panel/Panel/HBoxContainer/SocialButton" to="." method="_on_SocialButton_pressed"]
+[connection signal="pressed" from="Panel/Panel/HBoxContainer/DMButton" to="." method="_on_DMButton_pressed"]
