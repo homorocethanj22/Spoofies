@@ -6,3 +6,11 @@ func _on_Button_pressed():
 
 func _on_Testy_pressed():
 	poop.popup()
+
+
+func _on_SocialButton_pressed():
+	$ComingSoonDialog.show()
+
+
+func _on_DMButton_pressed():
+	$ComingSoonDialog.show()
