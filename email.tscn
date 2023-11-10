@@ -26,64 +26,63 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Content/ScrollContainer"]
-margin_right = 132.0
+margin_right = 133.0
 margin_bottom = 212.0
 
-[node name="TestX" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
-margin_right = 132.0
+[node name="email1" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_right = 133.0
 margin_bottom = 20.0
 text = "Best Buy"
 
 [node name="email2" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 24.0
-margin_right = 132.0
+margin_right = 133.0
 margin_bottom = 44.0
 text = "NetBank"
 
 [node name="email3" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 48.0
-margin_right = 132.0
+margin_right = 133.0
 margin_bottom = 68.0
-text = "ABC Inc."
+text = "NatBank"
 
 [node name="email4" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 72.0
-margin_right = 132.0
+margin_right = 133.0
 margin_bottom = 92.0
-text = "John Doe"
+text = "Healthy Living In..."
 
 [node name="email5" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 96.0
-margin_right = 132.0
+margin_right = 133.0
 margin_bottom = 116.0
-text = "recsports"
+text = "Derek Carlson"
 
 [node name="email6" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 120.0
-margin_right = 132.0
+margin_right = 133.0
 margin_bottom = 140.0
-text = "LinkedIn"
+text = "DineDash"
 
 [node name="email7" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 144.0
-margin_right = 132.0
+margin_right = 133.0
 margin_bottom = 164.0
-text = "Netflix"
+text = "Nerd Squad Clien..."
 
 [node name="email8" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 168.0
-margin_right = 132.0
+margin_right = 133.0
 margin_bottom = 188.0
-text = "LinkedIn Job Alerts"
+text = "USPS Delivery"
 
 [node name="email9" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 192.0
-margin_right = 132.0
+margin_right = 133.0
 margin_bottom = 212.0
 text = "VTPolice"
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -115,7 +114,7 @@ bbcode_text = "[color=black]
 Best Buy
 __________________________________________________________________________________________________________________________________________
 
-From: [color=blue]shipping-services@bestbvy.com[/color]
+From: [color=blue][u]shipping-services@bestbvy.com[/u][/color]
 
 Subject: your package is on the way!
 __________________________________________________________________________________________________________________________________________
@@ -129,7 +128,7 @@ Order No. 9000X9237BY746328
 MacBook Pro 2023 2TB: $3,528.89
 
 If you wish cancel your order or update shipping information go to this link:[/color]
-[color=blue]1280X3ioPsh812ASW.com[/color]"
+[color=blue][u]1280X3ioPsh812ASW.com[/u][/color]"
 text = "
 Best Buy
 __________________________________________________________________________________________________________________________________________
@@ -172,7 +171,6 @@ margin_bottom = 16.0
 text = "X"
 
 [node name="PopupPanel2" type="PopupPanel" parent="."]
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -204,7 +202,7 @@ bbcode_text = "[color=black]
 NetBank
 __________________________________________________________________________________________________________________________________________
 
-From: [color=blue]netbank-official@gmail.com[/color]
+From: [color=blue][u]netbank-official@gmail.com[/u][/color]
 
 Subject: save your online data!
 __________________________________________________________________________________________________________________________________________
@@ -212,7 +210,7 @@ ________________________________________________________________________________
 
 NetBank Customer,
 
-We have recently update our internet banking system. You will need to log in and confirm your online data. If you wish to continue receiving online service, click this [color=blue]link[/color] and log in using the same information you used to log in the last time you accessed your online data.
+We have recently update our internet banking system. You will need to log in and confirm your online data. If you wish to continue receiving online service, click this [color=blue][u]link[/u][/color] and log in using the same information you used to log in the last time you accessed your online data.
 
 Thank you,
 User Name[/color]
@@ -256,9 +254,594 @@ margin_right = 4.0
 margin_bottom = 16.0
 text = "X"
 
-[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/TestX" to="." method="_on_TestX_pressed"]
+[node name="PopupPanel3" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel3/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel3/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+NatBank statement@natbank.com
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]statementbank@usoisk.com[/u][/color]
+
+Subject: Your Monthly Account Statement
+__________________________________________________________________________________________________________________________________________
+
+
+Hi NatBank Customer,
+
+Your monthly account statement is now available. [color=blue][u]Log in[/u][/color] to view your statement.
+Thank you,
+
+Natbank
+
+Copyright NatBank, All Rights Reserved.
+[/color]
+"
+text = "
+NatBank statement@natbank.com
+__________________________________________________________________________________________________________________________________________
+
+From: statementbank@usoisk.com
+
+Subject: Your Monthly Account Statement
+__________________________________________________________________________________________________________________________________________
+
+
+Hi NatBank Customer,
+
+Your monthly account statement is now available. Log in to view your statement.
+Thank you,
+
+Natbank
+
+Copyright NatBank, All Rights Reserved.
+
+"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel3/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.5
+margin_top = -20.0
+margin_right = 29.5
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel3/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel4" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel4/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel4/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Healthy Living Insights
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]subscription@healthyliv.com[/u][/color]
+
+Subject: Thank you for subscribing to our newsletter!
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,
+
+We are delighted to have you as our new subscriber to our newsletter for a charge of $19.99 a month. You'll now receve regular updates on our latest articles, promotions, and news. Thank you for joining our community!
+
+To cancel your subscription, please go [color=blue][u]here[/u][/color]
+
+Best regards,
+Healthy Living Insights
+
+[/color]
+"
+text = "
+Healthy Living Insights
+__________________________________________________________________________________________________________________________________________
+
+From: subscription@healthyliv.com
+
+Subject: Thank you for subscribing to our newsletter!
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,
+
+We are delighted to have you as our new subscriber to our newsletter for a charge of $19.99 a month. You'll now receve regular updates on our latest articles, promotions, and news. Thank you for joining our community!
+
+To cancel your subscription, please go here
+
+Best regards,
+Healthy Living Insights
+
+
+"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel4/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.5
+margin_top = -20.0
+margin_right = 29.5
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel4/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel5" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel5/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel5/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Derek Carlson
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]beautifulphotos@pholomag.co[/u][/color]
+
+Subject: Check out the latest family photos
+__________________________________________________________________________________________________________________________________________
+
+
+Hi John Smith,
+
+I've just uploaded the latest family photos to your [color=blue][u]album[/u][/color]. Take a look and relive the memories.
+
+Regards,
+PhotoMag
+
+[/color]
+"
+text = "
+Derek Carlson
+__________________________________________________________________________________________________________________________________________
+
+From: beautifulphotos@pholomag.co
+
+Subject: Check out the latest family photos
+__________________________________________________________________________________________________________________________________________
+
+
+Hi John Smith,
+
+I've just uploaded the latest family photos to your album. Take a look and relive the memories.
+
+Regards,
+PhotoMag
+
+
+"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel5/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.5
+margin_top = -20.0
+margin_right = 29.5
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel5/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel6" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel6/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel6/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+DineDash
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]support@dinedash.io[/u][/color]
+
+Subject: Refunded order
+__________________________________________________________________________________________________________________________________________
+
+
+Dear DineDash customer,
+
+We are attempting to refund your recent order but have encountered a payment issue. Please update your payment details [color=blue][u]here[/u][/color] so we can refund your order.
+
+Thank you.
+DineDash Customer Service
+
+
+[/color]
+"
+text = "
+DineDash
+__________________________________________________________________________________________________________________________________________
+
+From: support@dinedash.io
+
+Subject: Refunded order
+__________________________________________________________________________________________________________________________________________
+
+
+Dear DineDash customer,
+
+We are attempting to refund your recent order but have encountered a payment issue. Please update your payment details here so we can refund your order.
+
+Thank you.
+DineDash Customer Service
+
+
+
+"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel6/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.5
+margin_top = -20.0
+margin_right = 29.5
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel6/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel7" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel7"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel7/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel7/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Nerd Squad Client Portal
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]invoicing@techsupport-corp.com[/u][/color]
+
+Subject: Nerd Squad Notice - Payment Processed
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,
+
+Thank you for your continued business!
+
+Your Nerd Squad subscription plan for Anti-Virus Software has been successfully renewed and updated today! 
+
+The below amount has been debited from your card and will reflect in your statement within 24 hours.
+
+Product: Nerd Squad @ Anti-Virus Software - 3 year subscription
+InvoiceNo: #SEF-64798
+Total Amount: $342.92 USD
+Payment Method: Stored Credit Card
+
+Note: 
+For account questions or to cancel your subscription or to request a refund,
+click [color=blue][u]here[/u][/color]
+
+Sincerely,
+Nerd Squad, All Rights Reserved.
+
+
+
+[/color]
+"
+text = "
+Nerd Squad Client Portal
+__________________________________________________________________________________________________________________________________________
+
+From: invoicing@techsupport-corp.com
+
+Subject: Nerd Squad Notice - Payment Processed
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,
+
+Thank you for your continued business!
+
+Your Nerd Squad subscription plan for Anti-Virus Software has been successfully renewed and updated today! 
+
+The below amount has been debited from your card and will reflect in your statement within 24 hours.
+
+Product: Nerd Squad @ Anti-Virus Software - 3 year subscription
+InvoiceNo: #SEF-64798
+Total Amount: $342.92 USD
+Payment Method: Stored Credit Card
+
+Note: 
+For account questions or to cancel your subscription or to request a refund,
+click here
+
+Sincerely,
+Nerd Squad, All Rights Reserved.
+
+
+
+
+"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel7/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.5
+margin_top = -20.0
+margin_right = 29.5
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel7/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel8" type="PopupPanel" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel8/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel8/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+USPS Delivery
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]usps@account-maintenence.com[/u][/color]
+
+Subject: Delivery Notification
+__________________________________________________________________________________________________________________________________________
+
+
+Your parcel has arrived on October 19, 2024
+
+Courier was unable to deliver the parcel to you.
+
+Click [color=blue][u]here[/u][/color] to confirm the delivery address and check shipping process.
+
+Copyright USPS, All Rights Reserved.
+
+
+
+[/color]
+"
+text = "
+USPS Delivery
+__________________________________________________________________________________________________________________________________________
+
+From: usps@account-maintenence.com
+
+Subject: Delivery Notification
+__________________________________________________________________________________________________________________________________________
+
+
+Your parcel has arrived on October 19, 2024
+
+Courier was unable to deliver the parcel to you.
+
+Click here to confirm the delivery address and check shipping process.
+
+Copyright USPS, All Rights Reserved.
+
+
+
+
+"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel8/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.5
+margin_top = -20.0
+margin_right = 29.5
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel8/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email1" to="." method="_on_email1_pressed"]
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email2" to="." method="_on_email2_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email3" to="." method="_on_email3_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email4" to="." method="_on_email4_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email5" to="." method="_on_email5_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email6" to="." method="_on_email6_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email7" to="." method="_on_email7_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email8" to="." method="_on_email8_pressed"]
 [connection signal="pressed" from="PopupPanel/ColorRect/Panel/DetectButton" to="." method="_on_DetectButton_pressed"]
 [connection signal="pressed" from="PopupPanel/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel2/ColorRect/Panel/DetectButton2" to="." method="_on_DetectButton2_pressed"]
 [connection signal="pressed" from="PopupPanel2/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel3/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel4/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel5/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel6/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel7/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel8/ColorRect/Exit" to="." method="_on_Exit_pressed"]
