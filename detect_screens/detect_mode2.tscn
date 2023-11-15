@@ -30,7 +30,7 @@ NetBank Customer,
 We have recently update our internet banking system. You will need to log in and confirm your online data. If you wish to continue receiving online service, click this [color=blue]link[/color] and log in using the same information you used to log in the last time you accessed your online data.
 
 Thank you,
-User Name[/color]
+Netbank[/color]
 "
 text = "
 
@@ -47,7 +47,7 @@ NetBank Customer,
 We have recently update our internet banking system. You will need to log in and confirm your online data. If you wish to continue receiving online service, click this link and log in using the same information you used to log in the last time you accessed your online data.
 
 Thank you,
-User Name
+Netbank
 "
 
 [node name="Panel2" type="ColorRect" parent="."]
@@ -84,9 +84,10 @@ margin_bottom = 76.0
 
 [node name="bad2" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_top = 266.0
-margin_right = 177.0
-margin_bottom = 287.0
+margin_left = 58.0
+margin_top = 192.0
+margin_right = 87.0
+margin_bottom = 214.0
 
 [node name="Found" type="AcceptDialog" parent="."]
 modulate = Color( 0, 1, 0.415686, 1 )
@@ -184,13 +185,6 @@ margin_top = 190.0
 margin_right = 60.0
 margin_bottom = 211.0
 
-[node name="bad3" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 59.0
-margin_top = 189.0
-margin_right = 88.0
-margin_bottom = 211.0
-
 [node name="Wrong6" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 88.0
@@ -211,9 +205,9 @@ margin_bottom = 256.0
 [connection signal="pressed" from="Wrong2" to="." method="_on_Wrong1_pressed"]
 [connection signal="pressed" from="Wrong3" to="." method="_on_Wrong1_pressed"]
 [connection signal="pressed" from="Wrong4" to="." method="_on_Wrong1_pressed"]
+[connection signal="popup_hide" from="finishedpopup" to="." method="_on_finishedpopup_popup_hide"]
 [connection signal="pressed" from="Potential1" to="." method="_on_Potential1_pressed"]
 [connection signal="pressed" from="Potential2" to="." method="_on_Potential1_pressed"]
 [connection signal="pressed" from="Wrong5" to="." method="_on_Wrong1_pressed"]
-[connection signal="pressed" from="bad3" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Wrong6" to="." method="_on_Wrong1_pressed"]
 [connection signal="pressed" from="Wrong7" to="." method="_on_Wrong1_pressed"]

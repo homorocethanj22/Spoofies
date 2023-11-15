@@ -14,6 +14,10 @@ anchor_bottom = 1.0
 [node name="Content" type="VBoxContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -2.0
+margin_top = 2.0
+margin_right = -2.0
+margin_bottom = 2.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Content"]
 margin_right = 1024.0
@@ -80,7 +84,7 @@ text = "USPS Delivery"
 margin_top = 192.0
 margin_right = 133.0
 margin_bottom = 212.0
-text = "VTPolice"
+text = "Industrial Inc."
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
 anchor_left = 0.5
@@ -171,6 +175,7 @@ margin_bottom = 16.0
 text = "X"
 
 [node name="PopupPanel2" type="PopupPanel" parent="."]
+visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -213,7 +218,7 @@ NetBank Customer,
 We have recently update our internet banking system. You will need to log in and confirm your online data. If you wish to continue receiving online service, click this [color=blue][u]link[/u][/color] and log in using the same information you used to log in the last time you accessed your online data.
 
 Thank you,
-User Name[/color]
+NetBank[/color]
 "
 text = "
 NetBank
@@ -230,7 +235,7 @@ NetBank Customer,
 We have recently update our internet banking system. You will need to log in and confirm your online data. If you wish to continue receiving online service, click this link and log in using the same information you used to log in the last time you accessed your online data.
 
 Thank you,
-User Name
+NetBank
 "
 
 [node name="DetectButton2" type="Button" parent="PopupPanel2/ColorRect/Panel"]
@@ -733,7 +738,6 @@ margin_bottom = 16.0
 text = "X"
 
 [node name="PopupPanel8" type="PopupPanel" parent="."]
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -827,6 +831,110 @@ margin_right = 4.0
 margin_bottom = 16.0
 text = "X"
 
+[node name="PopupPanel9" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel9"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel9/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel9/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Industrial Inc.
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]automatedHR@IndustrialInc.com[/u][/color]
+
+Subject: Schedule your interview with Industrial Inc.
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,
+
+We are pleased to invite you for an interview with Industrial Inc. 
+
+Please follow these steps in order to schedule your online interview:
+
+1. Sign in to your talent network account at [color=blue][u]career.IndustrialInc.com[/u][/color]
+2. Navigate to your ongoing applications and select \"Actionable Items\".
+3. Select \"Schedule Interview\".
+4. Select a convenient time from the options provided in the calendar.
+
+We look forward to meeting you soon. 
+
+[color=red]*This is an automated message.*[/color]
+
+[/color]
+"
+text = "
+Industrial Inc.
+__________________________________________________________________________________________________________________________________________
+
+From: automatedHR@IndustrialInc.com
+
+Subject: Schedule your interview with Industrial Inc.
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,
+
+We are pleased to invite you for an interview with Industrial Inc. 
+
+Please follow these steps in order to schedule your online interview:
+
+1. Sign in to your talent network account at career.IndustrialInc.com
+2. Navigate to your ongoing applications and select \"Actionable Items\".
+3. Select \"Schedule Interview\".
+4. Select a convenient time from the options provided in the calendar.
+
+We look forward to meeting you soon. 
+
+*This is an automated message.*
+
+
+"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel9/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.5
+margin_top = -20.0
+margin_right = 29.5
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel9/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email1" to="." method="_on_email1_pressed"]
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email2" to="." method="_on_email2_pressed"]
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email3" to="." method="_on_email3_pressed"]
@@ -835,6 +943,7 @@ text = "X"
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email6" to="." method="_on_email6_pressed"]
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email7" to="." method="_on_email7_pressed"]
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email8" to="." method="_on_email8_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email9" to="." method="_on_email9_pressed"]
 [connection signal="pressed" from="PopupPanel/ColorRect/Panel/DetectButton" to="." method="_on_DetectButton_pressed"]
 [connection signal="pressed" from="PopupPanel/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel2/ColorRect/Panel/DetectButton2" to="." method="_on_DetectButton2_pressed"]
@@ -845,3 +954,4 @@ text = "X"
 [connection signal="pressed" from="PopupPanel6/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel7/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel8/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel9/ColorRect/Exit" to="." method="_on_Exit_pressed"]

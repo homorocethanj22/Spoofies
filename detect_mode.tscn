@@ -151,6 +151,7 @@ margin_right = 484.0
 margin_bottom = 272.0
 
 [node name="finishedpopup" type="AcceptDialog" parent="."]
+visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -168,3 +169,5 @@ dialog_text = "All scam clues found!! On to the next one!"
 [connection signal="pressed" from="Wrong3" to="." method="_on_Wrong3_pressed"]
 [connection signal="pressed" from="Wrong4" to="." method="_on_Wrong4_pressed"]
 [connection signal="pressed" from="Wrong5" to="." method="_on_Wrong5_pressed"]
+[connection signal="confirmed" from="finishedpopup" to="." method="_on_finishedpopup_confirmed"]
+[connection signal="popup_hide" from="finishedpopup" to="." method="_on_finishedpopup_popup_hide"]

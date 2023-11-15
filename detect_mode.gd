@@ -54,3 +54,12 @@ func _finished():
 
 func _on_Potential1_pressed():
 	$PotentialClue.popup()
+
+func _process(delta):
+	if !$Found.is_visible() and !$finishedpopup.is_visible():
+		_finished()
+
+
+func _on_finishedpopup_popup_hide():
+	get_tree().change_scene("res://Main_UI.tscn")
+

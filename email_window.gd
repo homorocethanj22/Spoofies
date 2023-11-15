@@ -21,6 +21,7 @@ func _on_Exit_pressed():
 	$PopupPanel6.hide()
 	$PopupPanel7.hide()
 	$PopupPanel8.hide()
+	$PopupPanel9.hide()
 
 
 func _on_DetectButton2_pressed():
@@ -53,3 +54,7 @@ func _on_email7_pressed():
 
 func _on_email8_pressed():
 	$PopupPanel8.popup()
+
+
+func _on_email9_pressed():
+	$PopupPanel9.popup()
