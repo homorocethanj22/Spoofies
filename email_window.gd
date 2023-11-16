@@ -1,15 +1,15 @@
 extends Control
 
 #Helper func to hide email buttons:
-func hide_emails():
+func disable_emails():
 	for n in 28:
 		var button_name = "email" + str(n+1)
 		if global.mail_read[n]:
 			var button = get_node("Content/ScrollContainer/VBoxContainer/" + button_name)
-			button.hide()
+			button.disabled = true
 
 func _ready():
-	hide_emails()
+	disable_emails()
 
 func _on_RealButton_pressed():
 	$RealConfirm.popup()
@@ -17,7 +17,7 @@ func _on_RealButton_pressed():
 
 func _on_RealConfirm_popup_hide():
 	_on_Exit_pressed()
-	hide_emails()
+	disable_emails()
 
 
 func _on_RealNotButton_pressed():
