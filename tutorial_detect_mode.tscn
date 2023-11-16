@@ -1,0 +1,256 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://tutorial_detect_mode.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Panel" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="Panel"]
+margin_right = 1024.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+
+
+
+From: [color=blue][u]this.is.a.fake.address@fake.con[/u][/color]
+
+Subject: Fake Email Scam!
+__________________________________________________________________________________________________________________________________________________________________________
+
+Hello,
+
+Please click this [color=blue][u]fake link[/u][/color]
+
+Thank you,
+Scammer[/color]
+"
+text = "
+
+
+
+From: this.is.a.fake.address@fake.con
+
+Subject: Fake Email Scam!
+__________________________________________________________________________________________________________________________________________________________________________
+
+Hello,
+
+Please click this fake link
+
+Thank you,
+Scammer
+"
+
+[node name="Panel2" type="ColorRect" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -103.0
+color = Color( 0.584314, 0.584314, 0.584314, 1 )
+
+[node name="Label" type="Label" parent="Panel2"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -102.0
+text = "Detection Mode Enabled"
+align = 1
+valign = 1
+
+[node name="Label" type="Label" parent="."]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_right = 1026.0
+margin_bottom = 48.0
+text = "
+Fake Email
+___________________________________________________________________________________________________________________________________________________________________________"
+
+[node name="bad1" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 39.0
+margin_top = 54.0
+margin_right = 242.0
+margin_bottom = 76.0
+
+[node name="bad2" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 104.0
+margin_top = 161.0
+margin_right = 164.0
+margin_bottom = 182.0
+
+[node name="Found" type="AcceptDialog" parent="."]
+modulate = Color( 0, 1, 0.415686, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -130.5
+margin_top = -69.5
+margin_right = 130.5
+margin_bottom = 69.5
+dialog_text = "Scam clue found!"
+
+[node name="NotFound" type="AcceptDialog" parent="."]
+modulate = Color( 1, 0.368627, 0.368627, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -129.0
+margin_top = -69.0
+margin_right = 133.0
+margin_bottom = 69.0
+dialog_text = "Not a scam clue..."
+
+[node name="Wrong2" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -2.0
+margin_top = 131.0
+margin_right = 40.0
+margin_bottom = 154.0
+
+[node name="finishedpopup" type="AcceptDialog" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -193.5
+margin_top = -127.5
+margin_right = 193.5
+margin_bottom = 127.5
+dialog_text = "All scam clues found!! On to the next one!"
+
+[node name="Tutorial7" type="AcceptDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -177.0
+margin_top = -109.0
+margin_right = 177.0
+margin_bottom = 109.0
+window_title = "Tutorial 7/12"
+dialog_text = "This is the detection screen.
+Here, you must identify the parts of the Email that
+seem suspicious.
+
+Click \"OK\" to proceed..."
+
+[node name="Tutorial8" type="WindowDialog" parent="."]
+margin_left = 263.0
+margin_top = 28.0
+margin_right = 535.0
+margin_bottom = 151.0
+window_title = "Tutorial 8/12"
+
+[node name="Label" type="Label" parent="Tutorial8"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -136.0
+margin_top = -61.5
+margin_right = 136.0
+margin_bottom = 61.5
+text = "
+Lets get to identifying!
+
+This email address looks suspicious.
+
+Lets click on it to identify it..."
+
+[node name="Tutorial9" type="WindowDialog" parent="."]
+margin_left = 194.0
+margin_top = 140.0
+margin_right = 466.0
+margin_bottom = 263.0
+window_title = "Tutorial 9/12"
+
+[node name="Label" type="Label" parent="Tutorial9"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -136.0
+margin_top = -61.5
+margin_right = 136.0
+margin_bottom = 61.5
+text = "
+Now lets say you make a mistake and
+you click on something that is not
+suspicious.
+
+Go ahead and click on the
+greeting: \"Hello,\""
+
+[node name="Tutorial10" type="AcceptDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -139.5
+margin_top = -39.0
+margin_right = 139.5
+margin_bottom = 39.0
+window_title = "Tutorial 10/12"
+dialog_text = "As you can see, each misclick is bad
+and results and you losing a bit of health."
+
+[node name="Tutorial11" type="WindowDialog" parent="."]
+margin_left = 194.0
+margin_top = 140.0
+margin_right = 466.0
+margin_bottom = 263.0
+window_title = "Tutorial 11/12"
+
+[node name="Label" type="Label" parent="Tutorial11"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -136.0
+margin_top = -61.5
+margin_right = 136.0
+margin_bottom = 61.5
+text = "
+Lets finish identifying all the scam clues
+in this Email.
+
+Go ahead and click on the fake link
+to finish detecting this Email."
+
+[node name="Tutorial12" type="AcceptDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -389.0
+margin_top = -205.5
+margin_right = 389.0
+margin_bottom = 205.5
+window_title = "Tutorial 12/12"
+dialog_text = "Well done!!!
+
+That is the end of the tutorial.
+
+Click \"OK\" to finish the tutorial"
+
+[connection signal="pressed" from="bad1" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="bad2" to="." method="_on_bad2_pressed"]
+[connection signal="confirmed" from="Found" to="." method="_on_Found_confirmed"]
+[connection signal="confirmed" from="NotFound" to="." method="_on_NotFound_confirmed"]
+[connection signal="pressed" from="Wrong2" to="." method="_on_Wrong2_pressed"]
+[connection signal="confirmed" from="finishedpopup" to="." method="_on_finishedpopup_confirmed"]
+[connection signal="confirmed" from="Tutorial7" to="." method="_on_Tutorial7_confirmed"]
+[connection signal="confirmed" from="Tutorial10" to="." method="_on_Tutorial10_confirmed"]
+[connection signal="confirmed" from="Tutorial12" to="." method="_on_Tutorial12_confirmed"]
