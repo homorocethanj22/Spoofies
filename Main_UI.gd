@@ -1,10 +1,14 @@
 extends Control
 
-var tutorial_bool = 0
 func _ready():
-	tutorial_bool = tutorial_bool + 1
-	if tutorial_bool == 1:
+	
+	if global.first_start:
 		$Tutorial.popup()
+		global.first_start = false
+		
+	if global.from_detect:
+		_on_Testy_pressed()
+		global.from_detect = false
 
 func _on_Testy_pressed():
 	$WindowDialog.popup()

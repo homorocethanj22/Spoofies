@@ -1,6 +1,5 @@
 extends Control
 
-
 func _on_RealButton_pressed():
 	$RealConfirm.popup()
 

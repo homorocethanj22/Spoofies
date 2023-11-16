@@ -1,7 +1,5 @@
 extends Control
 
-var health = 100
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -24,8 +22,8 @@ func _on_bad2_pressed():
 	#print(bool2)
 
 func wrong_click():
-	health = health - 1
-	print("Health: ", health)
+	global.health -= 1
+	print("Health: ", global.health)
 	$NotFound.popup()
 
 func _on_Wrong1_pressed():
@@ -61,5 +59,6 @@ func _process(delta):
 
 
 func _on_finishedpopup_popup_hide():
+	global.from_detect = true
 	get_tree().change_scene("res://Main_UI.tscn")
 
