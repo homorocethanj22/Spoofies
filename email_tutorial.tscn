@@ -134,10 +134,10 @@ text = "X"
 
 [node name="Tutorial3" type="WindowDialog" parent="RealPopup"]
 visible = true
-margin_left = 298.5
-margin_top = 251.0
-margin_right = 685.5
-margin_bottom = 433.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 839.0
+margin_bottom = 548.0
 window_title = "Tutorial 4/12"
 
 [node name="Label" type="Label" parent="RealPopup/Tutorial3"]
@@ -159,7 +159,6 @@ to click \"Real Email\" at the bottom to
 proceed"
 
 [node name="FakePopup" type="PopupPanel" parent="."]
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -255,11 +254,10 @@ margin_bottom = 16.0
 text = "X"
 
 [node name="Tutorial4" type="WindowDialog" parent="FakePopup"]
-visible = true
-margin_left = 298.5
-margin_top = 251.0
-margin_right = 685.5
-margin_bottom = 433.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 839.0
+margin_bottom = 548.0
 window_title = "Tutorial 6/12"
 
 [node name="Label" type="Label" parent="FakePopup/Tutorial4"]

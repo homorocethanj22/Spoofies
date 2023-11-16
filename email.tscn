@@ -31,7 +31,7 @@ size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Content/ScrollContainer"]
 margin_right = 133.0
-margin_bottom = 212.0
+margin_bottom = 668.0
 
 [node name="email1" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_right = 133.0
@@ -48,7 +48,7 @@ text = "NetBank"
 margin_top = 48.0
 margin_right = 133.0
 margin_bottom = 68.0
-text = "NatBank"
+text = "NatBank<statem..."
 
 [node name="email4" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
 margin_top = 72.0
@@ -85,6 +85,138 @@ margin_top = 192.0
 margin_right = 133.0
 margin_bottom = 212.0
 text = "Industrial Inc."
+
+[node name="email10" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 216.0
+margin_right = 133.0
+margin_bottom = 236.0
+text = "Online Survey In..."
+
+[node name="email11" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 240.0
+margin_right = 133.0
+margin_bottom = 260.0
+text = "Office 720"
+
+[node name="email12" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 264.0
+margin_right = 133.0
+margin_bottom = 284.0
+text = "UniVPN Client Se..."
+
+[node name="email13" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 288.0
+margin_right = 133.0
+margin_bottom = 308.0
+text = "Tweeter"
+
+[node name="email14" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 312.0
+margin_right = 133.0
+margin_bottom = 332.0
+text = "Guitar Hub"
+
+[node name="email15" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 336.0
+margin_right = 133.0
+margin_bottom = 356.0
+text = "Piedmont Credit..."
+
+[node name="email16" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 360.0
+margin_right = 133.0
+margin_bottom = 380.0
+text = "Bill Watson"
+
+[node name="email17" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 384.0
+margin_right = 133.0
+margin_bottom = 404.0
+text = "Economental"
+
+[node name="email18" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 408.0
+margin_right = 133.0
+margin_bottom = 428.0
+text = "Epsilon Airlines"
+
+[node name="email19" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 432.0
+margin_right = 133.0
+margin_bottom = 452.0
+text = "The XYZ Shop"
+
+[node name="email20" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 456.0
+margin_right = 133.0
+margin_bottom = 476.0
+text = "Kinabalu Custom..."
+
+[node name="email21" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 480.0
+margin_right = 133.0
+margin_bottom = 500.0
+text = "Blue Ridge Apart..."
+
+[node name="email22" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 504.0
+margin_right = 133.0
+margin_bottom = 524.0
+text = "Camille Johnson"
+
+[node name="email23" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 528.0
+margin_right = 133.0
+margin_bottom = 548.0
+text = "Screenflix"
+
+[node name="email24" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 552.0
+margin_right = 133.0
+margin_bottom = 572.0
+text = "Minisoft Securit..."
+
+[node name="email25" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 576.0
+margin_right = 133.0
+margin_bottom = 596.0
+text = "Dave Wilkins"
+
+[node name="email26" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 600.0
+margin_right = 133.0
+margin_bottom = 620.0
+text = "Virginia Tech Al..."
+
+[node name="email27" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 624.0
+margin_right = 133.0
+margin_bottom = 644.0
+text = "FlourPower"
+
+[node name="email28" type="Button" parent="Content/ScrollContainer/VBoxContainer"]
+margin_top = 648.0
+margin_right = 133.0
+margin_bottom = 668.0
+text = "Food Bank of We..."
+
+[node name="RealConfirm" type="AcceptDialog" parent="."]
+modulate = Color( 0, 1, 0.415686, 1 )
+margin_left = 382.0
+margin_top = 284.0
+margin_right = 659.0
+margin_bottom = 342.0
+window_title = "Correct!"
+dialog_text = "This is a real email. Move on to the next!"
+
+[node name="RealNotConfirm" type="AcceptDialog" parent="."]
+modulate = Color( 1, 0.368627, 0.368627, 1 )
+margin_left = 383.0
+margin_top = 284.0
+margin_right = 677.0
+margin_bottom = 342.0
+window_title = "Scammed!"
+dialog_text = "Scam alert! Try and identify the scam clues!"
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
 anchor_left = 0.5
@@ -153,14 +285,24 @@ MacBook Pro 2023 2TB: $3,528.89
 If you wish cancel your order or update shipping information go to this link:
 1280X3ioPsh812ASW.com"
 
+[node name="RealNotButton" type="Button" parent="PopupPanel/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
 [node name="DetectButton" type="Button" parent="PopupPanel/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -32.5
-margin_top = -20.0
-margin_right = 29.5
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Detect"
@@ -175,7 +317,6 @@ margin_bottom = 16.0
 text = "X"
 
 [node name="PopupPanel2" type="PopupPanel" parent="."]
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -238,14 +379,24 @@ Thank you,
 NetBank
 "
 
+[node name="RealNotButton" type="Button" parent="PopupPanel2/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
 [node name="DetectButton2" type="Button" parent="PopupPanel2/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -32.5
-margin_top = -20.0
-margin_right = 29.5
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Detect"
@@ -288,7 +439,7 @@ margin_right = 836.0
 margin_bottom = 497.0
 bbcode_enabled = true
 bbcode_text = "[color=black]
-NatBank statement@natbank.com
+NatBank <statement@natbank.com>
 __________________________________________________________________________________________________________________________________________
 
 From: [color=blue][u]statementbank@usoisk.com[/u][/color]
@@ -308,7 +459,7 @@ Copyright NatBank, All Rights Reserved.
 [/color]
 "
 text = "
-NatBank statement@natbank.com
+NatBank <statement@natbank.com>
 __________________________________________________________________________________________________________________________________________
 
 From: statementbank@usoisk.com
@@ -328,14 +479,24 @@ Copyright NatBank, All Rights Reserved.
 
 "
 
+[node name="RealNotButton" type="Button" parent="PopupPanel3/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
 [node name="DetectButton2" type="Button" parent="PopupPanel3/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -32.5
-margin_top = -20.0
-margin_right = 29.5
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Detect"
@@ -420,14 +581,24 @@ Healthy Living Insights
 
 "
 
+[node name="RealNotButton" type="Button" parent="PopupPanel4/ColorRect/Panel"]
+margin_left = 317.0
+margin_top = 509.0
+margin_right = 397.0
+margin_bottom = 529.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
 [node name="DetectButton2" type="Button" parent="PopupPanel4/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -32.5
-margin_top = -20.0
-margin_right = 29.5
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Detect"
@@ -508,14 +679,24 @@ PhotoMag
 
 "
 
+[node name="RealNotButton" type="Button" parent="PopupPanel5/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
 [node name="DetectButton2" type="Button" parent="PopupPanel5/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -32.5
-margin_top = -20.0
-margin_right = 29.5
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Detect"
@@ -598,14 +779,24 @@ DineDash Customer Service
 
 "
 
+[node name="RealNotButton" type="Button" parent="PopupPanel6/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
 [node name="DetectButton2" type="Button" parent="PopupPanel6/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -32.5
-margin_top = -20.0
-margin_right = 29.5
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Detect"
@@ -716,14 +907,24 @@ Nerd Squad, All Rights Reserved.
 
 "
 
+[node name="RealNotButton" type="Button" parent="PopupPanel7/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
 [node name="DetectButton2" type="Button" parent="PopupPanel7/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -32.5
-margin_top = -20.0
-margin_right = 29.5
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Detect"
@@ -779,7 +980,7 @@ Your parcel has arrived on October 19, 2024
 
 Courier was unable to deliver the parcel to you.
 
-Click [color=blue][u]here[/u][/color] to confirm the delivery address and check shipping process.
+[color=blue][u]Click here[/u][/color] to confirm the delivery address and check shipping process.
 
 Copyright USPS, All Rights Reserved.
 
@@ -810,14 +1011,24 @@ Copyright USPS, All Rights Reserved.
 
 "
 
+[node name="RealNotButton" type="Button" parent="PopupPanel8/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
 [node name="DetectButton2" type="Button" parent="PopupPanel8/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -32.5
-margin_top = -20.0
-margin_right = 29.5
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Detect"
@@ -882,7 +1093,9 @@ Please follow these steps in order to schedule your online interview:
 
 We look forward to meeting you soon. 
 
-[color=red]*This is an automated message.*[/color]
+Industrial Inc.
+
+[color=red]*This is an automated message, please do not reply to this email.*[/color]
 
 [/color]
 "
@@ -909,24 +1122,2038 @@ Please follow these steps in order to schedule your online interview:
 
 We look forward to meeting you soon. 
 
-*This is an automated message.*
+Industrial Inc.
+
+*This is an automated message, please do not reply to this email.*
 
 
 "
+
+[node name="RealButton" type="Button" parent="PopupPanel9/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
 
 [node name="DetectButton2" type="Button" parent="PopupPanel9/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -32.5
-margin_top = -20.0
-margin_right = 29.5
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Detect"
 
 [node name="Exit" type="Button" parent="PopupPanel9/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel10" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel10"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel10/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel10/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Online Survey Invitation
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]mst++connect12498y@oceania.com[/u][/color]
+
+Subject: Share your feedback and win a prize!
+__________________________________________________________________________________________________________________________________________
+
+
+Hi,
+
+We'd love to hear your thoughts. Please take a few minutes to complete our online survey. As a token of our appreciation, you'll be entered into a prize draw to win a new 2023 iPad Pro!
+
+[color=blue][u]Begin Survey[/u][/color]
+"
+text = "
+Online Survey Invitation
+__________________________________________________________________________________________________________________________________________
+
+From: mst++connect12498y@oceania.com
+
+Subject: Share your feedback and win a prize!
+__________________________________________________________________________________________________________________________________________
+
+
+Hi,
+
+We'd love to hear your thoughts. Please take a few minutes to complete our online survey. As a token of our appreciation, you'll be entered into a prize draw to win a new 2023 iPad Pro!
+
+Begin Survey
+"
+
+[node name="RealNotButton" type="Button" parent="PopupPanel10/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel10/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel10/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel11" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel11"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel11/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel11/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Office 720
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]office720@msvu.ca[/u][/color]
+
+Subject: We received request from you
+__________________________________________________________________________________________________________________________________________
+
+
+Our record indicates that you have submitted a request to cancel your Office 720 email and this process has begun. If you did not submit this request or was done accidentally, please [color=blue][u]verify your account[/u][/color]. Failure to verify your email will result in the termination of your email.
+
+Regards,
+720 support team
+
+"
+text = "
+Office 720
+__________________________________________________________________________________________________________________________________________
+
+From: office720@msvu.ca
+
+Subject: We received request from you
+__________________________________________________________________________________________________________________________________________
+
+
+Our record indicates that you have submitted a request to cancel your Office 720 email and this process has begun. If you did not submit this request or was done accidentally, please verify your account. Failure to verify your email will result in the termination of your email.
+
+Regards,
+720 support team
+
+"
+
+[node name="RealNotButton" type="Button" parent="PopupPanel11/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel11/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel11/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel12" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel12"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel12/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel12/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+UniVPN Client Services
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]client-services@univpn.com[/u][/color]
+
+Subject: Your password has been reset
+__________________________________________________________________________________________________________________________________________
+
+
+[color=red]*This is an automated message, please do not reply to this email.*[/color]
+
+Hello John Smith,
+
+This is to confirm that your password for your account with UniVPN  has been successfully reset. If you did not initiate this change, please contact our support team immediately.
+
+
+Copyright UniVPN, All Rights Reserved
+
+
+"
+text = "
+UniVPN Client Services
+__________________________________________________________________________________________________________________________________________
+
+From: client-services@univpn.com
+
+Subject: Your password has been reset
+__________________________________________________________________________________________________________________________________________
+
+
+*This is an automated message, please do not reply to this email.*
+
+Hello John Smith,
+
+This is to confirm that your password for your account with UniVPN  has been successfully reset. If you did not initiate this change, please contact our support team immediately.
+
+
+Copyright UniVPN, All Rights Reserved
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel12/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel12/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel12/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel13" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel13"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel13/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel13/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Tweeter
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]account-updates@tweeter.com[/u][/color]
+
+Subject: You have a new follower on Tweeter!
+__________________________________________________________________________________________________________________________________________
+
+
+[color=blue]@JohnSmith[/color],
+
+You have a new follower on Tweeter! Stay connected with your audience and keep sharing great content!
+
+Sign in to your account for further updates.
+
+Copyright [color=teal]Tweeter[/color], All Rights Reserved
+
+
+"
+text = "
+Tweeter
+__________________________________________________________________________________________________________________________________________
+
+From: account-updates@tweeter.com
+
+Subject: You have a new follower on Tweeter!
+__________________________________________________________________________________________________________________________________________
+
+
+@JohnSmith,
+
+You have a new follower on Tweeter! Stay connected with your audience and keep sharing great content!
+
+Sign in to your account for further updates.
+
+Copyright Tweeter, All Rights Reserved
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel13/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel13/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel13/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel14" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel14"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel14/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel14/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Guitar Hub
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]service@guitarhub.com[/u][/color]
+
+Subject: Receipt for your recent purchase
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,,
+
+Thank you for your recent purchase from Guitar Hub! The details of your purchase are below.
+
+Transaction ID: 35DH211X0
+Date: 10/30/2023
+Type: Guitar
+Model: Gibson Les Paul
+Color: Red Sunburst
+Amount: $2,223.68
+
+If you have any questions, feel free to [color=blue][u]contact us[/u][/color].
+
+Sincerely,
+
+Guitar Hub, All Rights Reserved
+
+
+"
+text = "
+Guitar Hub
+__________________________________________________________________________________________________________________________________________
+
+From: service@guitarhub.com
+
+Subject: Receipt for your recent purchase
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,,
+
+Thank you for your recent purchase from Guitar Hub! The details of your purchase are below.
+
+Transaction ID: 35DH211X0
+Date: 10/30/2023
+Type: Guitar
+Model: Gibson Les Paul
+Color: Red Sunburst
+Amount: $2,223.68
+
+If you have any questions, feel free to contact us.
+
+Sincerely,
+
+Guitar Hub, All Rights Reserved
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel14/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel14/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel14/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel15" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel15"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel15/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel15/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Piedmont Credit Union
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]msnoreply@pcunion.com[/u][/color]
+
+Subject: Your monthly statement is ready
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,
+
+Your monthly statement for account number 225389YD is now available. You can view and download it by logging into your online banking account.
+
+If you need any assistance, please don't hesitate to contact us.
+
+Regards,
+Piedmont Credit Union
+
+
+
+"
+text = "
+Piedmont Credit Union
+__________________________________________________________________________________________________________________________________________
+
+From: msnoreply@pcunion.com
+
+Subject: Your monthly statement is ready
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,
+
+Your monthly statement for account number 225389YD is now available. You can view and download it by logging into your online banking account.
+
+If you need any assistance, please don't hesitate to contact us.
+
+Regards,
+Piedmont Credit Union
+
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel15/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel15/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel15/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel16" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel16"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel16/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel16/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Bill Watson
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]billwats@gmail.com[/u][/color]
+
+Subject: Join us for a backyard BBQ this weekend!
+__________________________________________________________________________________________________________________________________________
+
+
+Hey John,,
+
+We're hosting a backyard BBQ this weekend, and you're invited! Join us on Saturday, 10/28/2023 at 197 West Moon Ave. for some delicious food and good company. Please let us know if you can make it.
+
+[color=blue][u]RSVP[/u][/color]
+
+See you there!
+Bill
+
+
+
+"
+text = "
+Bill Watson
+__________________________________________________________________________________________________________________________________________
+
+From: billwats@gmail.com
+
+Subject: Join us for a backyard BBQ this weekend!
+__________________________________________________________________________________________________________________________________________
+
+
+Hey John,,
+
+We're hosting a backyard BBQ this weekend, and you're invited! Join us on Saturday, 10/28/2023 at 197 West Moon Ave. for some delicious food and good company. Please let us know if you can make it.
+
+RSVP
+
+See you there!
+Bill
+
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel16/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel16/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel16/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel17" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel17"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel17/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel17/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Tweeter
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]economental@blogspot.com[/u][/color]
+
+Subject: Weekly updates from Economental
+__________________________________________________________________________________________________________________________________________
+
+
+Hello John Doe
+
+We at the Economental blog, where the environment and economics meet, would like to formally thank you for signing up for our newsletter.
+
+Get ready for a dose of inspiration! Our weekly newsletter is packed with the latest articles, tips, and updates from Economental. We hope you enjoy reading!
+
+Best regards,
+Emily Lofton, Editor, Economental
+(823) 373-2188
+
+Click on [color=blue][u]unsubscribe[/u][/color] to unfollow our newsletter.
+
+"
+text = "
+Tweeter
+__________________________________________________________________________________________________________________________________________
+
+From: economental@blogspot.com
+
+Subject: Weekly updates from Economental
+__________________________________________________________________________________________________________________________________________
+
+
+Hello John Doe
+
+We at the Economental blog, where the environment and economics meet, would like to formally thank you for signing up for our newsletter.
+
+Get ready for a dose of inspiration! Our weekly newsletter is packed with the latest articles, tips, and updates from Economental. We hope you enjoy reading!
+
+Best regards,
+Emily Lofton, Editor, Economental
+(823) 373-2188
+
+Click on unsubscribe to unfollow our newsletter.
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel17/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel17/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel17/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel18" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel18"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel18/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel18/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Epsilon Airlines
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]donotreply@epsilonairlines.com[/u][/color]
+
+Subject: Flight Booking Confirmation
+__________________________________________________________________________________________________________________________________________
+
+
+Hello John Smith,
+
+Your flight booking to Denver International Airport with Epsilon Airlines on [Date] has been successfully confirmed. Here are your flight details:
+
+Flight Number: 489
+Departure: Roanoke Airport
+Arrival: Denver International Airport
+Departure Time: 8:30 A.M. E.S.T.
+Departure Date: 12/14/2023
+
+If you wish to change or cancel your flight, please contact us [color=blue][u]here[/u][/color].
+
+Safe travels!
+
+Epsilon Airlines, All Rights Reserved
+
+
+"
+text = "
+Epsilon Airlines
+__________________________________________________________________________________________________________________________________________
+
+From: donotreply@epsilonairlines.com
+
+Subject: Flight Booking Confirmation
+__________________________________________________________________________________________________________________________________________
+
+
+Hello John Smith,
+
+Your flight booking to Denver International Airport with Epsilon Airlines on [Date] has been successfully confirmed. Here are your flight details:
+
+Flight Number: 489
+Departure: Roanoke Airport
+Arrival: Denver International Airport
+Departure Time: 8:30 A.M. E.S.T.
+Departure Date: 12/14/2023
+
+If you wish to change or cancel your flight, please contact us here.
+
+Safe travels!
+
+Epsilon Airlines, All Rights Reserved
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel18/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel18/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel18/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel19" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel19"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel19/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel19/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+The XYZ Shop
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]xyz-customers@xyzshop.com[/u][/color]
+
+Subject:  Exclusive offers from XYZ Shop
+__________________________________________________________________________________________________________________________________________
+
+
+Hi John Smith,
+
+We're excited to share our latest offers and promotions with you. 
+
+[color=blue][u]Check out the exclusive deals available at XYZ Store this week.[/u][/color]
+
+[color=blue][u]Sign up[/u][/color] for our Newsletter for more updates.
+
+Happy shopping!
+
+XYZ Shop, All Rights Reserved
+
+
+"
+text = "
+The XYZ Shop
+__________________________________________________________________________________________________________________________________________
+
+From: xyz-customers@xyzshop.com
+
+Subject:  Exclusive offers from XYZ Shop
+__________________________________________________________________________________________________________________________________________
+
+
+Hi John Smith,
+
+We're excited to share our latest offers and promotions with you. 
+
+Check out the exclusive deals available at XYZ Store this week.
+
+Sign up for our Newsletter for more updates.
+
+Happy shopping!
+
+XYZ Shop, All Rights Reserved
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel19/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel19/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel19/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel20" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel20"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel20/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel20/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Kinabalu Customer Feedback
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]noreply@kinabalu.com[/u][/color]
+
+Subject: How did we do?
+__________________________________________________________________________________________________________________________________________
+
+
+Hi John Smith,
+
+Thank you for shopping Kinabalu! We love hearing back from customers to further improve our site and shopping experience. If you would like, please fill out the following survey. Doing so may make you eligible for future store credit.
+
+
+[color=blue][u]Begin Survey[/u][/color]
+
+
+Thank you!
+
+Kinabalu Customer Support
+[color=blue][u]Contact support[/u][/color]
+
+
+
+"
+text = "
+Kinabalu Customer Feedback
+__________________________________________________________________________________________________________________________________________
+
+From: noreply@kinabalu.com
+
+Subject: How did we do?
+__________________________________________________________________________________________________________________________________________
+
+
+Hi John Smith,
+
+Thank you for shopping Kinabalu! We love hearing back from customers to further improve our site and shopping experience. If you would like, please fill out the following survey. Doing so may make you eligible for future store credit.
+
+
+Begin Survey
+
+
+Thank you!
+
+Kinabalu Customer Support
+Contact support
+
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel20/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel20/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel20/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel21" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel21"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel21/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel21/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Blue Ridge Apartments
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]blueridge-residential@apartments.com[/u][/color]
+
+Subject: Your electricity bill is due soon
+__________________________________________________________________________________________________________________________________________
+
+
+Hello John Smith,
+
+This is a friendly reminder that your electricity bill for the month of October is due on November 5th, 2023. You can view and pay your bill [color=blue][u]online[/u][/color] or at your nearest management office.
+
+Thank you for your prompt payment.
+
+Blue Ridge Apartments
+
+
+
+"
+text = "
+Blue Ridge Apartments
+__________________________________________________________________________________________________________________________________________
+
+From: blueridge-residential@apartments.com
+
+Subject: Your electricity bill is due soon
+__________________________________________________________________________________________________________________________________________
+
+
+Hello John Smith,
+
+This is a friendly reminder that your electricity bill for the month of October is due on November 5th, 2023. You can view and pay your bill online or at your nearest management office.
+
+Thank you for your prompt payment.
+
+Blue Ridge Apartments
+
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel21/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel21/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel21/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel22" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel22"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel22/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel22/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Camille Johnson
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]crjohnson@alltext.org[/u][/color]
+
+Subject: Update on the Project
+__________________________________________________________________________________________________________________________________________
+
+
+Team,
+
+I wanted to provide you with an update on our latest project. Please find attached the latest project report, and let's schedule a meeting to discuss the next steps.
+
+[color=blue][u]Smiths Project Report Oct.[/u][/color]
+
+Thanks,
+Camille
+
+
+
+"
+text = "
+Camille Johnson
+__________________________________________________________________________________________________________________________________________
+
+From: crjohnson@alltext.org
+
+Subject: Update on the Project
+__________________________________________________________________________________________________________________________________________
+
+
+Team,
+
+I wanted to provide you with an update on our latest project. Please find attached the latest project report, and let's schedule a meeting to discuss the next steps.
+
+Smiths Project Report Oct.
+
+Thanks,
+Camille
+
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel22/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel22/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel22/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel23" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel23"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel23/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel23/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Screenflix
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]noreply@screenflixmail.com[/u][/color]
+
+Subject: Your Screenflix subscription is renewing
+__________________________________________________________________________________________________________________________________________
+
+
+Hello John Smith,
+
+This is a reminder that we will be renewing your Screenflix subscription via automatic renewal for the next month in 7 days. You'll continue to enjoy unlimited streaming of your favorite shows and movies!
+
+[color=blue][u]Cancel or change subscription plan[/u][/color]
+
+Screenflix Team
+Copyright Screenflix, All Rights Reserved
+
+
+
+"
+text = "
+Screenflix
+__________________________________________________________________________________________________________________________________________
+
+From: noreply@screenflixmail.com
+
+Subject: Your Screenflix subscription is renewing
+__________________________________________________________________________________________________________________________________________
+
+
+Hello John Smith,
+
+This is a reminder that we will be renewing your Screenflix subscription via automatic renewal for the next month in 7 days. You'll continue to enjoy unlimited streaming of your favorite shows and movies!
+
+Cancel or change subscription plan
+
+Screenflix Team
+Copyright Screenflix, All Rights Reserved
+
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel23/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel23/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel23/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel24" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel24"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel24/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel24/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Minisoft Security Alert
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]security@minisoft.com[/u][/color]
+
+Subject: New device logged in
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,
+
+We’ve detected a login to your Minisoft account from a new device near Blacksburg, VA. 
+
+I.P.: 25.10.35.203
+Device type: Zell deskbook Z150
+Location: Blacksburg, VA
+
+If this isn’t you, please log into your account and report immediately or [color=blue][u]contact our staff[/u][/color].
+
+Regards,
+
+Minisoft Security Team
+This is an automated message.
+
+
+
+"
+text = "
+Minisoft Security Alert
+__________________________________________________________________________________________________________________________________________
+
+From: security@minisoft.com
+
+Subject: New device logged in
+__________________________________________________________________________________________________________________________________________
+
+
+Dear John Smith,
+
+We’ve detected a login to your Minisoft account from a new device near Blacksburg, VA. 
+
+I.P.: 25.10.35.203
+Device type: Zell deskbook Z150
+Location: Blacksburg, VA
+
+If this isn’t you, please log into your account and report immediately or contact our staff.
+
+Regards,
+
+Minisoft Security Team
+This is an automated message.
+
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel24/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel24/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel24/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel25" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel25"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel25/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel25/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Dave Wilkins
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]dswilkins@alltext.org[/u][/color]
+
+Subject: Join our upcoming webinar on marketing
+__________________________________________________________________________________________________________________________________________
+
+
+Hi all,
+
+We invite you to our upcoming webinar on effective marketing strategies. Register now to secure your spot and gain valuable insights.
+
+[color=blue][u]Register for Webinar[/u][/color]
+
+See you then,
+Dave
+
+
+
+
+"
+text = "
+Dave Wilkins
+__________________________________________________________________________________________________________________________________________
+
+From: dswilkins@alltext.org
+
+Subject: Join our upcoming webinar on marketing
+__________________________________________________________________________________________________________________________________________
+
+
+Hi all,
+
+We invite you to our upcoming webinar on effective marketing strategies. Register now to secure your spot and gain valuable insights.
+
+Register for Webinar
+
+See you then,
+Dave
+
+
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel25/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel25/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel25/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel26" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel26"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel26/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel26/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Virginia Tech Alumni Association
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]alumniservices@vt.edu[/u][/color]
+
+Subject: Stay connected with your alma mater
+__________________________________________________________________________________________________________________________________________
+
+
+Hello John Smith,
+
+Keep the alumni spirit alive! Our newsletter brings you updates from your alma mater, alumni success stories, and upcoming events
+
+[color=blue][u]Sign up for newsletter[/u][/color]
+
+Warm regards,
+Virginia Tech Alumni Association
+
+
+
+"
+text = "
+Virginia Tech Alumni Association
+__________________________________________________________________________________________________________________________________________
+
+From: alumniservices@vt.edu
+
+Subject: Stay connected with your alma mater
+__________________________________________________________________________________________________________________________________________
+
+
+Hello John Smith,
+
+Keep the alumni spirit alive! Our newsletter brings you updates from your alma mater, alumni success stories, and upcoming events
+
+Sign up for newsletter
+
+Warm regards,
+Virginia Tech Alumni Association
+
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel26/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel26/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel26/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel27" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel27"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel27/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel27/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+FlourPower
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]fpllc@flourpower.com[/u][/color]
+
+Subject: Welcome to \"Art of Cooking\" course
+__________________________________________________________________________________________________________________________________________
+
+
+Hi John,
+
+We're excited to welcome you to the \"Art of Cooking\" online course. Get ready to embark on a culinary journey.
+The “Art of Cooking” is a 5-week course taught by professional chefs that will teach you to turn your home kitchen into a Michelin Star restaurant.
+
+If you have any questions, please contact the course instructor, Rordon Gamsey ([color=blue][u]rgamsey@gmail.com[/u][/color]) 
+
+Enjoy the course!
+
+FlourPower LLC.
+
+
+
+"
+text = "
+FlourPower
+__________________________________________________________________________________________________________________________________________
+
+From: fpllc@flourpower.com
+
+Subject: Welcome to \"Art of Cooking\" course
+__________________________________________________________________________________________________________________________________________
+
+
+Hi John,
+
+We're excited to welcome you to the \"Art of Cooking\" online course. Get ready to embark on a culinary journey.
+The “Art of Cooking” is a 5-week course taught by professional chefs that will teach you to turn your home kitchen into a Michelin Star restaurant.
+
+If you have any questions, please contact the course instructor, Rordon Gamsey (rgamsey@gmail.com) 
+
+Enjoy the course!
+
+FlourPower LLC.
+
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel27/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel27/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel27/ColorRect"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -16.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 16.0
+text = "X"
+
+[node name="PopupPanel28" type="PopupPanel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -421.5
+margin_top = -276.0
+margin_right = 421.5
+margin_bottom = 276.0
+
+[node name="ColorRect" type="ColorRect" parent="PopupPanel28"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Panel" type="ColorRect" parent="PopupPanel28/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="email_elements" type="RichTextLabel" parent="PopupPanel28/ColorRect/Panel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 836.0
+margin_bottom = 497.0
+bbcode_enabled = true
+bbcode_text = "[color=black]
+Food Banks of Western VA
+__________________________________________________________________________________________________________________________________________
+
+From: [color=blue][u]account-updates@tweeter.com[/u][/color]
+
+Subject: Support our cause with a donation
+__________________________________________________________________________________________________________________________________________
+
+
+Hello,
+
+We rely on the generosity of supporters like you to make a difference. Please consider making a donation to help us continue our mission.
+
+Donate now at a food bank near you. We also run biweekly food drives, [color=blue][u]contact us[/u][/color] for more information.
+
+Thank you for your generosity,
+Food Banks of Western VA
+
+
+
+"
+text = "
+Food Banks of Western VA
+__________________________________________________________________________________________________________________________________________
+
+From: account-updates@tweeter.com
+
+Subject: Support our cause with a donation
+__________________________________________________________________________________________________________________________________________
+
+
+Hello,
+
+We rely on the generosity of supporters like you to make a difference. Please consider making a donation to help us continue our mission.
+
+Donate now at a food bank near you. We also run biweekly food drives, contact us for more information.
+
+Thank you for your generosity,
+Food Banks of Western VA
+
+
+
+"
+
+[node name="RealButton" type="Button" parent="PopupPanel28/ColorRect/Panel"]
+margin_left = 321.0
+margin_top = 513.0
+margin_right = 401.0
+margin_bottom = 533.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+text = "Real Email"
+
+[node name="DetectButton2" type="Button" parent="PopupPanel28/ColorRect/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -0.5
+margin_top = -31.0
+margin_right = 79.5
+margin_bottom = -11.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Detect"
+
+[node name="Exit" type="Button" parent="PopupPanel28/ColorRect"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -16.0
@@ -944,14 +3171,81 @@ text = "X"
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email7" to="." method="_on_email7_pressed"]
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email8" to="." method="_on_email8_pressed"]
 [connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email9" to="." method="_on_email9_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email10" to="." method="_on_email10_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email11" to="." method="_on_email11_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email12" to="." method="_on_email12_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email13" to="." method="_on_email13_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email14" to="." method="_on_email14_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email15" to="." method="_on_email15_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email16" to="." method="_on_email16_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email17" to="." method="_on_email17_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email18" to="." method="_on_email18_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email19" to="." method="_on_email19_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email20" to="." method="_on_email20_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email21" to="." method="_on_email21_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email22" to="." method="_on_email22_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email23" to="." method="_on_email23_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email24" to="." method="_on_email24_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email25" to="." method="_on_email25_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email26" to="." method="_on_email26_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email27" to="." method="_on_email27_pressed"]
+[connection signal="pressed" from="Content/ScrollContainer/VBoxContainer/email28" to="." method="_on_email28_pressed"]
+[connection signal="popup_hide" from="RealConfirm" to="." method="_on_RealConfirm_popup_hide"]
+[connection signal="pressed" from="PopupPanel/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
 [connection signal="pressed" from="PopupPanel/ColorRect/Panel/DetectButton" to="." method="_on_DetectButton_pressed"]
 [connection signal="pressed" from="PopupPanel/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel2/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
 [connection signal="pressed" from="PopupPanel2/ColorRect/Panel/DetectButton2" to="." method="_on_DetectButton2_pressed"]
 [connection signal="pressed" from="PopupPanel2/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel3/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
 [connection signal="pressed" from="PopupPanel3/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel4/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
 [connection signal="pressed" from="PopupPanel4/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel5/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
 [connection signal="pressed" from="PopupPanel5/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel6/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
 [connection signal="pressed" from="PopupPanel6/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel7/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
 [connection signal="pressed" from="PopupPanel7/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel8/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
 [connection signal="pressed" from="PopupPanel8/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel9/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
 [connection signal="pressed" from="PopupPanel9/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel10/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
+[connection signal="pressed" from="PopupPanel10/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel11/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
+[connection signal="pressed" from="PopupPanel11/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel12/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel12/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel13/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel13/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel14/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel14/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel15/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel15/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel16/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel16/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel17/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel17/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel18/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel18/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel19/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel19/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel20/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel20/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel21/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel21/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel22/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel22/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel23/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel23/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel24/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel24/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel25/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel25/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel26/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel26/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel27/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel27/ColorRect/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="PopupPanel28/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
+[connection signal="pressed" from="PopupPanel28/ColorRect/Exit" to="." method="_on_Exit_pressed"]
