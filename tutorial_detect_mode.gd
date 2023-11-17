@@ -61,3 +61,7 @@ func _on_Tutorial12_confirmed():
 
 func _on_finishedpopup_confirmed():
 	$Tutorial12.popup()
+
+
+func _on_HelpButton_pressed():
+	$Help.popup()

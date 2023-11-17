@@ -71,6 +71,16 @@ text = "Detection Mode Enabled"
 align = 1
 valign = 1
 
+[node name="HelpButton" type="Button" parent="Panel2"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -102.0
+margin_top = -29.5
+margin_bottom = 29.5
+text = "Helpful Tips"
+
 [node name="Label" type="Label" parent="."]
 self_modulate = Color( 0, 0, 0, 1 )
 margin_right = 1026.0
@@ -161,6 +171,46 @@ margin_right = 193.5
 margin_bottom = 127.5
 dialog_text = "All scam clues found!! On to the next one!"
 
+[node name="Help" type="WindowDialog" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -566.0
+margin_top = -251.0
+margin_bottom = 244.0
+window_title = "Tips"
+
+[node name="Label" type="Label" parent="Help"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "
+ 1) A suspicious or inaccurate email address can be a sign that an email is a scam.
+ Look for spelling errors in the address and be wary of addresses that do not have
+ a U.S. domain. 
+
+ 2) An absent or improper greeting can be a sign that an email is a scam. Most
+ legitimate organizations who have voluntarily received your personal information
+ will greet you by name. 
+
+ 3) Repeated grammatical errors can be a sign that an email is a scam.
+
+ 4) Repeated spelling errors can be a sign that an email is a scam.
+
+ 5) Too little detail or vagueness is a tactic used by scammers to bait recipients into
+ wanting to know more and carelessly clicking. A prime example is a lack of
+ identifying information such as order numbers, account numbers, or tracking numbers.
+
+ 6) Buzzwords and phrases that convey a sense of urgency can be a sign that an email
+ is a scam. Examples are words/phrases like “immediately”, “urgently”, and
+ “failure to comply”. While those can be attached to important legitimate emails,
+ they are important to notice and evaluate at your best discretion.
+
+ 7) Watch for suspicious external links, especially ones that are unnamed and/or
+ ones that the email implores you to click.
+"
+
+[connection signal="pressed" from="Panel2/HelpButton" to="." method="_on_HelpButton_pressed"]
 [connection signal="pressed" from="bad1" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="bad2" to="." method="_on_bad2_pressed"]
 [connection signal="pressed" from="Wrong1" to="." method="_on_Wrong1_pressed"]

@@ -63,3 +63,7 @@ func _on_finishedpopup_popup_hide():
 	get_tree().change_scene("res://Main_UI.tscn")
 
 
+
+
+func _on_HelpButton_pressed():
+	$Help.popup()

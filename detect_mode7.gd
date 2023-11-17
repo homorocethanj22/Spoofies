@@ -56,3 +56,7 @@ func _on_finishedpopup_popup_hide():
 
 func _on_Found_confirmed():
 	_finished()
+
+
+func _on_HelpButton_pressed():
+	$Help.popup()

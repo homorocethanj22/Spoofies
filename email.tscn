@@ -511,7 +511,6 @@ margin_bottom = 16.0
 text = "X"
 
 [node name="PopupPanel4" type="PopupPanel" parent="."]
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -583,10 +582,10 @@ Healthy Living Insights
 "
 
 [node name="RealNotButton" type="Button" parent="PopupPanel4/ColorRect/Panel"]
-margin_left = 321.0
-margin_top = 513.0
-margin_right = 401.0
-margin_bottom = 533.0
+margin_left = 317.0
+margin_top = 509.0
+margin_right = 397.0
+margin_bottom = 529.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
 text = "Real Email"
@@ -1254,6 +1253,7 @@ margin_bottom = 16.0
 text = "X"
 
 [node name="PopupPanel11" type="PopupPanel" parent="."]
+visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
