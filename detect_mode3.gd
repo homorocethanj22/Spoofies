@@ -62,4 +62,3 @@ func _on_finishedpopup_popup_hide():
 	global.from_detect = true
 	get_tree().change_scene("res://Main_UI.tscn")
 
-

@@ -13,13 +13,7 @@ var bool1 = false
 func _on_Button2_pressed():
 	bool1 = true
 	$Found.popup()
-	#print(bool1)
 
-var bool2 = false
-func _on_bad2_pressed():
-	bool2 = true
-	$Found.popup()
-	#print(bool2)
 
 func wrong_click():
 	global.health -= 1
@@ -46,16 +40,12 @@ func _on_Wrong5_pressed():
 	wrong_click()
 	
 func _finished():
-	if bool1 == true and bool2 == true:
-		$finishedpopup.popup()
+	$finishedpopup.popup()
 
 
 func _on_Potential1_pressed():
 	$PotentialClue.popup()
 
-func _process(delta):
-	if !$Found.is_visible() and !$finishedpopup.is_visible():
-		_finished()
 
 
 func _on_finishedpopup_popup_hide():
@@ -63,3 +53,6 @@ func _on_finishedpopup_popup_hide():
 	get_tree().change_scene("res://Main_UI.tscn")
 
 
+
+func _on_Found_confirmed():
+	_finished()

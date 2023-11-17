@@ -21,6 +21,11 @@ func _on_bad2_pressed():
 	$Found.popup()
 	#print(bool2)
 
+var bool3 = false
+func _on_bad3_pressed():
+	bool3 = true
+	$Found.popup()
+
 func wrong_click():
 	global.health -= 1
 	print("Health: ", global.health)
@@ -46,7 +51,7 @@ func _on_Wrong5_pressed():
 	wrong_click()
 	
 func _finished():
-	if bool1 == true and bool2 == true:
+	if bool1 == true and bool2 == true and bool3 == true:
 		$finishedpopup.popup()
 
 

@@ -19,40 +19,38 @@ bbcode_text = "
 
 
 
-[color=black]From: [color=blue]shipping-services@bestbvy.com[/color]
+[color=black]From: [color=blue][u]beautifulphotos@pholomag.co[/u][/color]
 
-Subject: your package is on the way!
+Subject: Check out the latest family photos
 __________________________________________________________________________________________________________________________________________________________________________
 
 
-Dear Valued Customer,
+Hi John Smith,
 
-We are writing to inform you that your order has been shipped!
+I've just uploaded the latest family photos to your [color=blue][u]album[/u][/color]. Take a look and relive the memories.
 
-Order No. 9000X9237BY746328
-MacBook Pro 2023 2TB: $3,528.89
+Regards,
+PhotoMag
 
-If you wish cancel your order or update shipping information go to this link:[/color]
-[color=blue]1280X3ioPsh812ASW.com [/color] "
+[/color]"
 text = "
 
 
 
-From: shipping-services@bestbvy.com
+From: beautifulphotos@pholomag.co
 
-Subject: your package is on the way!
+Subject: Check out the latest family photos
 __________________________________________________________________________________________________________________________________________________________________________
 
 
-Dear Valued Customer,
+Hi John Smith,
 
-We are writing to inform you that your order has been shipped!
+I've just uploaded the latest family photos to your album. Take a look and relive the memories.
 
-Order No. 9000X9237BY746328
-MacBook Pro 2023 2TB: $3,528.89
+Regards,
+PhotoMag
 
-If you wish cancel your order or update shipping information go to this link:
-1280X3ioPsh812ASW.com  "
+"
 
 [node name="Panel2" type="ColorRect" parent="."]
 anchor_top = 1.0
@@ -76,21 +74,21 @@ self_modulate = Color( 0, 0, 0, 1 )
 margin_right = 1026.0
 margin_bottom = 48.0
 text = "
-Best Buy
+Derek Carlson
 ___________________________________________________________________________________________________________________________________________________________________________"
 
 [node name="bad1" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 39.0
 margin_top = 54.0
-margin_right = 262.0
+margin_right = 239.0
 margin_bottom = 76.0
 
 [node name="bad2" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_top = 266.0
-margin_right = 177.0
-margin_bottom = 287.0
+margin_top = 178.0
+margin_right = 608.0
+margin_bottom = 199.0
 
 [node name="Found" type="AcceptDialog" parent="."]
 modulate = Color( 0, 1, 0.415686, 1 )
@@ -120,35 +118,21 @@ dialog_text = "Not a scam clue..."
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 1.0
 margin_top = 87.0
-margin_right = 234.0
+margin_right = 277.0
 margin_bottom = 108.0
 
 [node name="Wrong2" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_top = 147.0
-margin_right = 150.0
+margin_right = 92.0
 margin_bottom = 168.0
 
 [node name="Wrong3" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 1.0
-margin_top = 176.0
-margin_right = 402.0
-margin_bottom = 197.0
-
-[node name="Wrong4" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = -1.0
-margin_top = 207.0
-margin_right = 232.0
-margin_bottom = 239.0
-
-[node name="Wrong5" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = -1.0
-margin_top = 252.0
-margin_right = 484.0
-margin_bottom = 272.0
+margin_top = 206.0
+margin_right = 67.0
+margin_bottom = 240.0
 
 [node name="finishedpopup" type="AcceptDialog" parent="."]
 anchor_left = 0.5
@@ -166,7 +150,5 @@ dialog_text = "All scam clues found!! On to the next one!"
 [connection signal="pressed" from="Wrong1" to="." method="_on_Wrong1_pressed"]
 [connection signal="pressed" from="Wrong2" to="." method="_on_Wrong2_pressed"]
 [connection signal="pressed" from="Wrong3" to="." method="_on_Wrong3_pressed"]
-[connection signal="pressed" from="Wrong4" to="." method="_on_Wrong4_pressed"]
-[connection signal="pressed" from="Wrong5" to="." method="_on_Wrong5_pressed"]
 [connection signal="confirmed" from="finishedpopup" to="." method="_on_finishedpopup_confirmed"]
 [connection signal="popup_hide" from="finishedpopup" to="." method="_on_finishedpopup_popup_hide"]

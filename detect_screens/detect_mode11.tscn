@@ -19,41 +19,31 @@ bbcode_text = "
 
 
 
-[color=black]From: [color=blue]statementbank@usoisk.com[/color]
+[color=black]From: [color=blue][u]office720@msvu.ca[/u][/color]
 
-Subject: Your Monthly Account Statement
+Subject: We received request from you
 __________________________________________________________________________________________________________________________________________________________________________
 
 
-Hi NatBank Customer,
+Our record indicates that you have submitted a request to cancel your Office 720 email and this process has begun. If you did not submit this request or was done accidentally, please [color=blue][u]verify your account[/u][/color]. Failure to verify your email will result in the termination of your email.
 
-Your monthly account statement is now available. [color=blue][u]Log in[/u][/color] to view your statement.
-Thank you,
-
-Natbank
-
-Copyright NatBank, All Rights Reserved.
-[/color]
+Regards,
+720 support team
 "
 text = "
 
 
 
-From: statementbank@usoisk.com
+From: office720@msvu.ca
 
-Subject: Your Monthly Account Statement
+Subject: We received request from you
 __________________________________________________________________________________________________________________________________________________________________________
 
 
-Hi NatBank Customer,
+Our record indicates that you have submitted a request to cancel your Office 720 email and this process has begun. If you did not submit this request or was done accidentally, please verify your account. Failure to verify your email will result in the termination of your email.
 
-Your monthly account statement is now available. Log in to view your statement.
-Thank you,
-
-Natbank
-
-Copyright NatBank, All Rights Reserved.
-
+Regards,
+720 support team
 "
 
 [node name="Panel2" type="ColorRect" parent="."]
@@ -78,15 +68,15 @@ self_modulate = Color( 0, 0, 0, 1 )
 margin_right = 1026.0
 margin_bottom = 48.0
 text = "
-NatBank <statement@natbank.com>
+Office 720
 ___________________________________________________________________________________________________________________________________________________________________________"
 
 [node name="bad1" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 39.0
-margin_top = 54.0
-margin_right = 220.0
-margin_bottom = 76.0
+margin_left = 164.0
+margin_top = 163.0
+margin_right = 290.0
+margin_bottom = 185.0
 
 [node name="Found" type="AcceptDialog" parent="."]
 modulate = Color( 0, 1, 0.415686, 1 )
@@ -133,23 +123,23 @@ margin_bottom = 108.0
 
 [node name="Wrong2" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 3.0
-margin_top = 174.0
-margin_right = 85.0
-margin_bottom = 209.0
+margin_top = 58.0
+margin_right = 169.0
+margin_bottom = 78.0
 
 [node name="Wrong3" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 214.0
-margin_top = 176.0
-margin_right = 516.0
-margin_bottom = 196.0
+margin_left = 1.0
+margin_top = 144.0
+margin_right = 1012.0
+margin_bottom = 164.0
 
 [node name="Wrong4" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_top = 251.0
-margin_right = 253.0
-margin_bottom = 272.0
+margin_left = 2.0
+margin_top = 162.0
+margin_right = 158.0
+margin_bottom = 183.0
 
 [node name="finishedpopup" type="AcceptDialog" parent="."]
 anchor_left = 0.5
@@ -185,24 +175,16 @@ margin_bottom = 243.0
 
 [node name="Wrong5" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 3.0
-margin_top = 190.0
-margin_right = 60.0
-margin_bottom = 211.0
+margin_left = 296.0
+margin_top = 163.0
+margin_right = 743.0
+margin_bottom = 184.0
 
 [node name="Wrong6" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 88.0
-margin_top = 191.0
-margin_right = 738.0
-margin_bottom = 212.0
-
-[node name="Wrong7" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 2.0
-margin_top = 223.0
-margin_right = 76.0
-margin_bottom = 256.0
+margin_top = 194.0
+margin_right = 118.0
+margin_bottom = 226.0
 
 [connection signal="pressed" from="bad1" to="." method="_on_Button2_pressed"]
 [connection signal="confirmed" from="Found" to="." method="_on_Found_confirmed"]
@@ -216,4 +198,3 @@ margin_bottom = 256.0
 [connection signal="pressed" from="Potential3" to="." method="_on_Potential1_pressed"]
 [connection signal="pressed" from="Wrong5" to="." method="_on_Wrong1_pressed"]
 [connection signal="pressed" from="Wrong6" to="." method="_on_Wrong1_pressed"]
-[connection signal="pressed" from="Wrong7" to="." method="_on_Wrong1_pressed"]

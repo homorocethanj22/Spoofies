@@ -19,40 +19,44 @@ bbcode_text = "
 
 
 
-[color=black]From: [color=blue]shipping-services@bestbvy.com[/color]
+[color=black]From: [color=blue][u]usps@account-maintenence.com[/u][/color]
 
-Subject: your package is on the way!
+Subject: Delivery Notification
 __________________________________________________________________________________________________________________________________________________________________________
 
 
-Dear Valued Customer,
+Your parcel has arrived on October 19, 2024
 
-We are writing to inform you that your order has been shipped!
+Courier was unable to deliver the parcel to you.
 
-Order No. 9000X9237BY746328
-MacBook Pro 2023 2TB: $3,528.89
+[color=blue][u]Click here[/u][/color] to confirm the delivery address and check shipping process.
 
-If you wish cancel your order or update shipping information go to this link:[/color]
-[color=blue]1280X3ioPsh812ASW.com [/color] "
+Copyright USPS, All Rights Reserved.
+
+
+
+[/color]"
 text = "
 
 
 
-From: shipping-services@bestbvy.com
+From: usps@account-maintenence.com
 
-Subject: your package is on the way!
+Subject: Delivery Notification
 __________________________________________________________________________________________________________________________________________________________________________
 
 
-Dear Valued Customer,
+Your parcel has arrived on October 19, 2024
 
-We are writing to inform you that your order has been shipped!
+Courier was unable to deliver the parcel to you.
 
-Order No. 9000X9237BY746328
-MacBook Pro 2023 2TB: $3,528.89
+Click here to confirm the delivery address and check shipping process.
 
-If you wish cancel your order or update shipping information go to this link:
-1280X3ioPsh812ASW.com  "
+Copyright USPS, All Rights Reserved.
+
+
+
+"
 
 [node name="Panel2" type="ColorRect" parent="."]
 anchor_top = 1.0
@@ -76,21 +80,20 @@ self_modulate = Color( 0, 0, 0, 1 )
 margin_right = 1026.0
 margin_bottom = 48.0
 text = "
-Best Buy
+USPS Delivery
 ___________________________________________________________________________________________________________________________________________________________________________"
 
 [node name="bad1" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 39.0
-margin_top = 54.0
-margin_right = 262.0
-margin_bottom = 76.0
+margin_top = 146.0
+margin_right = 286.0
+margin_bottom = 168.0
 
 [node name="bad2" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_top = 266.0
-margin_right = 177.0
-margin_bottom = 287.0
+margin_top = 207.0
+margin_right = 65.0
+margin_bottom = 228.0
 
 [node name="Found" type="AcceptDialog" parent="."]
 modulate = Color( 0, 1, 0.415686, 1 )
@@ -125,30 +128,30 @@ margin_bottom = 108.0
 
 [node name="Wrong2" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_top = 147.0
-margin_right = 150.0
-margin_bottom = 168.0
+margin_left = 1.0
+margin_top = 57.0
+margin_right = 256.0
+margin_bottom = 78.0
 
 [node name="Wrong3" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 1.0
 margin_top = 176.0
-margin_right = 402.0
+margin_right = 303.0
 margin_bottom = 197.0
 
 [node name="Wrong4" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = -1.0
-margin_top = 207.0
-margin_right = 232.0
-margin_bottom = 239.0
+margin_left = 67.0
+margin_top = 206.0
+margin_right = 451.0
+margin_bottom = 230.0
 
 [node name="Wrong5" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = -1.0
-margin_top = 252.0
-margin_right = 484.0
-margin_bottom = 272.0
+margin_top = 237.0
+margin_right = 235.0
+margin_bottom = 257.0
 
 [node name="finishedpopup" type="AcceptDialog" parent="."]
 anchor_left = 0.5

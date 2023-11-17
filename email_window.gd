@@ -199,11 +199,44 @@ func _on_email28_pressed():
 	
 	
 #Detect mode slots
-	
+# get_tree().change_scene()
 	
 func _on_DetectButton_pressed():
-	get_tree().change_scene("res://detect_mode.tscn")
+	get_tree().change_scene("res://detect_screens/detect_mode.tscn")
 	
 	
-func _on_DetectButton2_pressed():
+func _on_DetectButton2_pressed(): # I accidently edited the wrong one, so 3 and 2 are switched in detect mode, it is fine
+	get_tree().change_scene("res://detect_screens/detect_mode3.tscn")
+
+
+func _on_DetectButton3_pressed():
 	get_tree().change_scene("res://detect_screens/detect_mode2.tscn")
+
+
+func _on_DetectButton4_pressed():
+	get_tree().change_scene("res://detect_screens/detect_mode4.tscn")
+
+
+func _on_DetectButton5_pressed():
+	get_tree().change_scene("res://detect_screens/detect_mode5.tscn")
+
+
+func _on_DetectButton6_pressed():
+	get_tree().change_scene("res://detect_screens/detect_mode6.tscn")
+
+
+func _on_DetectButton7_pressed():
+	get_tree().change_scene("res://detect_screens/detect_mode7.tscn")
+
+
+func _on_DetectButton8_pressed():
+	get_tree().change_scene("res://detect_screens/detect_mode8.tscn")
+
+
+
+func _on_DetectButton10_pressed():
+	get_tree().change_scene("res://detect_screens/detect_mode10.tscn")
+
+
+func _on_DetectButton11_pressed():
+	get_tree().change_scene("res://detect_screens/detect_mode11.tscn")

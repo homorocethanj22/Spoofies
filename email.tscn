@@ -488,7 +488,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 text = "Real Email"
 
-[node name="DetectButton2" type="Button" parent="PopupPanel3/ColorRect/Panel"]
+[node name="DetectButton3" type="Button" parent="PopupPanel3/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -552,7 +552,7 @@ Dear John Smith,
 
 We are delighted to have you as our new subscriber to our newsletter for a charge of $19.99 a month. You'll now receve regular updates on our latest articles, promotions, and news. Thank you for joining our community!
 
-To cancel your subscription, please go [color=blue][u]here[/u][/color]
+[color=blue][u]Cancel your subscription[/u][/color]
 
 Best regards,
 Healthy Living Insights
@@ -573,7 +573,7 @@ Dear John Smith,
 
 We are delighted to have you as our new subscriber to our newsletter for a charge of $19.99 a month. You'll now receve regular updates on our latest articles, promotions, and news. Thank you for joining our community!
 
-To cancel your subscription, please go here
+Cancel your subscription
 
 Best regards,
 Healthy Living Insights
@@ -590,7 +590,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 text = "Real Email"
 
-[node name="DetectButton2" type="Button" parent="PopupPanel4/ColorRect/Panel"]
+[node name="DetectButton4" type="Button" parent="PopupPanel4/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -688,7 +688,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 text = "Real Email"
 
-[node name="DetectButton2" type="Button" parent="PopupPanel5/ColorRect/Panel"]
+[node name="DetectButton5" type="Button" parent="PopupPanel5/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -748,7 +748,7 @@ Subject: Refunded order
 __________________________________________________________________________________________________________________________________________
 
 
-Dear DineDash customer,
+Dear Jdoe02,
 
 We are attempting to refund your recent order but have encountered a payment issue. Please update your payment details [color=blue][u]here[/u][/color] so we can refund your order.
 
@@ -768,7 +768,7 @@ Subject: Refunded order
 __________________________________________________________________________________________________________________________________________
 
 
-Dear DineDash customer,
+Dear Jdoe02,
 
 We are attempting to refund your recent order but have encountered a payment issue. Please update your payment details here so we can refund your order.
 
@@ -788,7 +788,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 text = "Real Email"
 
-[node name="DetectButton2" type="Button" parent="PopupPanel6/ColorRect/Panel"]
+[node name="DetectButton6" type="Button" parent="PopupPanel6/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -848,7 +848,7 @@ Subject: Nerd Squad Notice - Payment Processed
 __________________________________________________________________________________________________________________________________________
 
 
-Dear John Smith,
+Dear John Doe,
 
 Thank you for your continued business!
 
@@ -862,11 +862,11 @@ Total Amount: $342.92 USD
 Payment Method: Stored Credit Card
 
 Note: 
-For account questions or to cancel your subscription or to request a refund,
-click [color=blue][u]here[/u][/color]
+For account questions or to cancel your subscription or to request a refund, fill out a [color=blue][u]contact form[/u][/color]
 
 Sincerely,
 Nerd Squad, All Rights Reserved.
+
 
 
 
@@ -882,7 +882,7 @@ Subject: Nerd Squad Notice - Payment Processed
 __________________________________________________________________________________________________________________________________________
 
 
-Dear John Smith,
+Dear John Doe,
 
 Thank you for your continued business!
 
@@ -896,11 +896,11 @@ Total Amount: $342.92 USD
 Payment Method: Stored Credit Card
 
 Note: 
-For account questions or to cancel your subscription or to request a refund,
-click here
+For account questions or to cancel your subscription or to request a refund, fill out a contact form
 
 Sincerely,
 Nerd Squad, All Rights Reserved.
+
 
 
 
@@ -916,7 +916,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 text = "Real Email"
 
-[node name="DetectButton2" type="Button" parent="PopupPanel7/ColorRect/Panel"]
+[node name="DetectButton7" type="Button" parent="PopupPanel7/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -1020,7 +1020,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 text = "Real Email"
 
-[node name="DetectButton2" type="Button" parent="PopupPanel8/ColorRect/Panel"]
+[node name="DetectButton8" type="Button" parent="PopupPanel8/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -1138,7 +1138,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 text = "Real Email"
 
-[node name="DetectButton2" type="Button" parent="PopupPanel9/ColorRect/Panel"]
+[node name="DetectButton9" type="Button" parent="PopupPanel9/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -1230,7 +1230,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 text = "Real Email"
 
-[node name="DetectButton2" type="Button" parent="PopupPanel10/ColorRect/Panel"]
+[node name="DetectButton10" type="Button" parent="PopupPanel10/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -1253,6 +1253,7 @@ margin_bottom = 16.0
 text = "X"
 
 [node name="PopupPanel11" type="PopupPanel" parent="."]
+visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -1322,7 +1323,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 3
 text = "Real Email"
 
-[node name="DetectButton2" type="Button" parent="PopupPanel11/ColorRect/Panel"]
+[node name="DetectButton11" type="Button" parent="PopupPanel11/ColorRect/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -3198,22 +3199,30 @@ text = "X"
 [connection signal="pressed" from="PopupPanel2/ColorRect/Panel/DetectButton2" to="." method="_on_DetectButton2_pressed"]
 [connection signal="pressed" from="PopupPanel2/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel3/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
+[connection signal="pressed" from="PopupPanel3/ColorRect/Panel/DetectButton3" to="." method="_on_DetectButton3_pressed"]
 [connection signal="pressed" from="PopupPanel3/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel4/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
+[connection signal="pressed" from="PopupPanel4/ColorRect/Panel/DetectButton4" to="." method="_on_DetectButton4_pressed"]
 [connection signal="pressed" from="PopupPanel4/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel5/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
+[connection signal="pressed" from="PopupPanel5/ColorRect/Panel/DetectButton5" to="." method="_on_DetectButton5_pressed"]
 [connection signal="pressed" from="PopupPanel5/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel6/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
+[connection signal="pressed" from="PopupPanel6/ColorRect/Panel/DetectButton6" to="." method="_on_DetectButton6_pressed"]
 [connection signal="pressed" from="PopupPanel6/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel7/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
+[connection signal="pressed" from="PopupPanel7/ColorRect/Panel/DetectButton7" to="." method="_on_DetectButton7_pressed"]
 [connection signal="pressed" from="PopupPanel7/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel8/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
+[connection signal="pressed" from="PopupPanel8/ColorRect/Panel/DetectButton8" to="." method="_on_DetectButton8_pressed"]
 [connection signal="pressed" from="PopupPanel8/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel9/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
 [connection signal="pressed" from="PopupPanel9/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel10/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
+[connection signal="pressed" from="PopupPanel10/ColorRect/Panel/DetectButton10" to="." method="_on_DetectButton10_pressed"]
 [connection signal="pressed" from="PopupPanel10/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel11/ColorRect/Panel/RealNotButton" to="." method="_on_RealNotButton_pressed"]
+[connection signal="pressed" from="PopupPanel11/ColorRect/Panel/DetectButton11" to="." method="_on_DetectButton11_pressed"]
 [connection signal="pressed" from="PopupPanel11/ColorRect/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="PopupPanel12/ColorRect/Panel/RealButton" to="." method="_on_RealButton_pressed"]
 [connection signal="pressed" from="PopupPanel12/ColorRect/Exit" to="." method="_on_Exit_pressed"]

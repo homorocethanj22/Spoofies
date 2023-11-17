@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://detect_screens/detect_mode.gd" type="Script" id=1]
+[ext_resource path="res://detect_screens/detect_mode4.gd" type="Script" id=1]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -19,40 +19,32 @@ bbcode_text = "
 
 
 
-[color=black]From: [color=blue]shipping-services@bestbvy.com[/color]
+[color=black]From: [color=blue][u]mst++connect12498y@oceania.com[/u][/color]
 
-Subject: your package is on the way!
+Subject: Share your feedback and win a prize!
 __________________________________________________________________________________________________________________________________________________________________________
 
 
-Dear Valued Customer,
+Hi,
 
-We are writing to inform you that your order has been shipped!
+We'd love to hear your thoughts. Please take a few minutes to complete our online survey. As a token of our appreciation, you'll be entered into a prize draw to win a new 2023 iPad Pro!
 
-Order No. 9000X9237BY746328
-MacBook Pro 2023 2TB: $3,528.89
-
-If you wish cancel your order or update shipping information go to this link:[/color]
-[color=blue]1280X3ioPsh812ASW.com [/color] "
+[color=blue][u]Begin Survey[/u][/color]"
 text = "
 
 
 
-From: shipping-services@bestbvy.com
+From: mst++connect12498y@oceania.com
 
-Subject: your package is on the way!
+Subject: Share your feedback and win a prize!
 __________________________________________________________________________________________________________________________________________________________________________
 
 
-Dear Valued Customer,
+Hi,
 
-We are writing to inform you that your order has been shipped!
+We'd love to hear your thoughts. Please take a few minutes to complete our online survey. As a token of our appreciation, you'll be entered into a prize draw to win a new 2023 iPad Pro!
 
-Order No. 9000X9237BY746328
-MacBook Pro 2023 2TB: $3,528.89
-
-If you wish cancel your order or update shipping information go to this link:
-1280X3ioPsh812ASW.com  "
+Begin Survey"
 
 [node name="Panel2" type="ColorRect" parent="."]
 anchor_top = 1.0
@@ -76,21 +68,28 @@ self_modulate = Color( 0, 0, 0, 1 )
 margin_right = 1026.0
 margin_bottom = 48.0
 text = "
-Best Buy
+Online Survey Invitation
 ___________________________________________________________________________________________________________________________________________________________________________"
 
 [node name="bad1" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 39.0
-margin_top = 54.0
-margin_right = 262.0
+margin_top = 56.0
+margin_right = 276.0
 margin_bottom = 76.0
 
 [node name="bad2" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_top = 266.0
-margin_right = 177.0
-margin_bottom = 287.0
+margin_left = -2.0
+margin_top = 146.0
+margin_right = 22.0
+margin_bottom = 167.0
+
+[node name="bad3" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 193.0
+margin_right = 162.0
+margin_bottom = 214.0
 
 [node name="Found" type="AcceptDialog" parent="."]
 modulate = Color( 0, 1, 0.415686, 1 )
@@ -120,35 +119,21 @@ dialog_text = "Not a scam clue..."
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 1.0
 margin_top = 87.0
-margin_right = 234.0
+margin_right = 291.0
 margin_bottom = 108.0
 
 [node name="Wrong2" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_top = 147.0
-margin_right = 150.0
-margin_bottom = 168.0
+margin_top = 173.0
+margin_right = 1019.0
+margin_bottom = 194.0
 
 [node name="Wrong3" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 1.0
-margin_top = 176.0
-margin_right = 402.0
-margin_bottom = 197.0
-
-[node name="Wrong4" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = -1.0
-margin_top = 207.0
-margin_right = 232.0
-margin_bottom = 239.0
-
-[node name="Wrong5" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = -1.0
-margin_top = 252.0
-margin_right = 484.0
-margin_bottom = 272.0
+margin_left = -3.0
+margin_top = 221.0
+margin_right = 85.0
+margin_bottom = 242.0
 
 [node name="finishedpopup" type="AcceptDialog" parent="."]
 anchor_left = 0.5
@@ -163,10 +148,9 @@ dialog_text = "All scam clues found!! On to the next one!"
 
 [connection signal="pressed" from="bad1" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="bad2" to="." method="_on_bad2_pressed"]
+[connection signal="pressed" from="bad3" to="." method="_on_bad3_pressed"]
 [connection signal="pressed" from="Wrong1" to="." method="_on_Wrong1_pressed"]
 [connection signal="pressed" from="Wrong2" to="." method="_on_Wrong2_pressed"]
 [connection signal="pressed" from="Wrong3" to="." method="_on_Wrong3_pressed"]
-[connection signal="pressed" from="Wrong4" to="." method="_on_Wrong4_pressed"]
-[connection signal="pressed" from="Wrong5" to="." method="_on_Wrong5_pressed"]
 [connection signal="confirmed" from="finishedpopup" to="." method="_on_finishedpopup_confirmed"]
 [connection signal="popup_hide" from="finishedpopup" to="." method="_on_finishedpopup_popup_hide"]
