@@ -140,6 +140,7 @@ margin_bottom = 127.5
 dialog_text = "All scam clues found!! On to the next one!"
 
 [node name="Tutorial7" type="AcceptDialog" parent="."]
+visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -148,7 +149,7 @@ margin_left = -177.0
 margin_top = -109.0
 margin_right = 177.0
 margin_bottom = 109.0
-window_title = "Tutorial 7/12"
+window_title = "Tutorial 7/13"
 dialog_text = "This is the detection screen.
 Here, you must identify the parts of the Email that
 seem suspicious.
@@ -156,11 +157,12 @@ seem suspicious.
 Click \"OK\" to proceed..."
 
 [node name="Tutorial8" type="WindowDialog" parent="."]
+visible = true
 margin_left = 263.0
 margin_top = 28.0
 margin_right = 535.0
 margin_bottom = 151.0
-window_title = "Tutorial 8/12"
+window_title = "Tutorial 9/13"
 
 [node name="Label" type="Label" parent="Tutorial8"]
 anchor_left = 0.5
@@ -183,7 +185,7 @@ margin_left = 194.0
 margin_top = 140.0
 margin_right = 466.0
 margin_bottom = 263.0
-window_title = "Tutorial 9/12"
+window_title = "Tutorial 10/13"
 
 [node name="Label" type="Label" parent="Tutorial9"]
 anchor_left = 0.5
@@ -211,16 +213,17 @@ margin_left = -139.5
 margin_top = -39.0
 margin_right = 139.5
 margin_bottom = 39.0
-window_title = "Tutorial 10/12"
+window_title = "Tutorial 11/13"
 dialog_text = "As you can see, each misclick is bad
 and results and you losing a bit of health."
 
 [node name="Tutorial11" type="WindowDialog" parent="."]
+visible = true
 margin_left = 194.0
 margin_top = 140.0
 margin_right = 466.0
 margin_bottom = 263.0
-window_title = "Tutorial 11/12"
+window_title = "Tutorial 12/13"
 
 [node name="Label" type="Label" parent="Tutorial11"]
 anchor_left = 0.5
@@ -247,7 +250,7 @@ margin_left = -389.0
 margin_top = -205.5
 margin_right = 389.0
 margin_bottom = 205.5
-window_title = "Tutorial 12/12"
+window_title = "Tutorial 13/13"
 dialog_text = "Well done!!!
 
 That is the end of the tutorial.
@@ -293,6 +296,32 @@ text = "
  ones that the email implores you to click.
 "
 
+[node name="Tutorial88" type="WindowDialog" parent="."]
+margin_left = 751.0
+margin_top = 365.0
+margin_right = 1006.0
+margin_bottom = 480.0
+window_title = "Tutorial 8/13"
+
+[node name="Label" type="Label" parent="Tutorial88"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "
+ Below is the tips button.
+ Click on it to bring up tips to get
+ some advice on what to look for in
+ these emails."
+
+[node name="Tutorial_tips" type="AcceptDialog" parent="."]
+margin_left = 87.0
+margin_top = 142.0
+margin_right = 342.0
+margin_bottom = 248.0
+window_title = "Tutorial Tips"
+dialog_text = "
+When you are done reading the tips,
+click \"OK\" to continue the tutorial"
+
 [connection signal="pressed" from="Panel2/HelpButton" to="." method="_on_HelpButton_pressed"]
 [connection signal="pressed" from="bad1" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="bad2" to="." method="_on_bad2_pressed"]
@@ -303,3 +332,4 @@ text = "
 [connection signal="confirmed" from="Tutorial7" to="." method="_on_Tutorial7_confirmed"]
 [connection signal="confirmed" from="Tutorial10" to="." method="_on_Tutorial10_confirmed"]
 [connection signal="confirmed" from="Tutorial12" to="." method="_on_Tutorial12_confirmed"]
+[connection signal="confirmed" from="Tutorial_tips" to="." method="_on_Tutorial_tips_confirmed"]

@@ -45,6 +45,7 @@ margin_bottom = 44.0
 text = "Scam Email"
 
 [node name="RealPopup" type="PopupPanel" parent="."]
+visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -138,11 +139,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -203.0
-margin_top = -130.0
-margin_right = 203.0
-margin_bottom = 130.0
-window_title = "Tutorial 4/12"
+margin_left = -168.5
+margin_top = -101.5
+margin_right = 168.5
+margin_bottom = 101.5
+window_title = "Tutorial 4/13"
 
 [node name="Label" type="Label" parent="RealPopup/Tutorial3"]
 anchor_left = 0.5
@@ -259,16 +260,15 @@ margin_bottom = 16.0
 text = "X"
 
 [node name="Tutorial4" type="WindowDialog" parent="FakePopup"]
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -186.0
-margin_top = -139.0
-margin_right = 186.0
-margin_bottom = 139.0
-window_title = "Tutorial 6/12"
+margin_left = -155.5
+margin_top = -88.0
+margin_right = 155.5
+margin_bottom = 88.0
+window_title = "Tutorial 6/13"
 
 [node name="Label" type="Label" parent="FakePopup/Tutorial4"]
 anchor_left = 0.5

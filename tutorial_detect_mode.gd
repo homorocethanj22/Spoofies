@@ -34,7 +34,7 @@ func _on_Potential1_pressed():
 
 
 func _on_Tutorial7_confirmed():
-	$Tutorial8.popup()
+	$Tutorial88.popup()
 
 var fcount = 0
 func _on_Found_confirmed():
@@ -65,3 +65,8 @@ func _on_finishedpopup_confirmed():
 
 func _on_HelpButton_pressed():
 	$Help.popup()
+	$Tutorial_tips.popup()
+
+
+func _on_Tutorial_tips_confirmed():
+	$Tutorial8.popup()
